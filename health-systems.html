@@ -1,0 +1,304 @@
+```html
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="گروه علمی نظام سلامت اندیشکده مجازی بین‌المللی رایدا؛ پژوهش در سیاست‌گذاری، حکمرانی، عدالت و آینده نظام سلامت.">
+  <title>نظام سلامت | اندیشکده رایدا</title>
+  <style>
+    :root {
+      --blue: #12345b;
+      --gold: #c9a44c;
+      --light: #f4f7fb;
+      --text: #263445;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Tahoma, Arial, sans-serif;
+      color: var(--text);
+      background: #fff;
+      line-height: 2;
+    }
+
+    header {
+      background: var(--blue);
+      color: white;
+      padding: 20px 7%;
+    }
+
+    .brand {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .brand span { color: var(--gold); }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover { color: var(--gold); }
+
+    .hero {
+      padding: 65px 8%;
+      text-align: center;
+      background: linear-gradient(135deg, #edf3fa, #fffaf0);
+    }
+
+    .hero h1 {
+      color: var(--blue);
+      font-size: clamp(30px, 5vw, 46px);
+      line-height: 1.6;
+      margin: 0 0 15px;
+    }
+
+    .hero .slogan {
+      color: #8b6c24;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .hero p {
+      max-width: 850px;
+      margin: 20px auto;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 10px 24px;
+      background: var(--blue);
+      color: white;
+      border-radius: 7px;
+      text-decoration: none;
+    }
+
+    section { padding: 45px 8%; }
+
+    section:nth-of-type(even) { background: var(--light); }
+
+    h2 {
+      color: var(--blue);
+      font-size: 26px;
+      margin-top: 0;
+    }
+
+    .intro {
+      max-width: 950px;
+      margin: auto;
+    }
+
+    .topics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .topic {
+      padding: 20px;
+      background: white;
+      border: 1px solid #e1e7ef;
+      border-top: 4px solid var(--gold);
+      border-radius: 10px;
+    }
+
+    .topic h3 {
+      color: var(--blue);
+      font-size: 18px;
+      margin-top: 0;
+    }
+
+    .topic p { font-size: 15px; }
+
+    .back {
+      text-align: center;
+      padding: 35px 8%;
+    }
+
+    footer {
+      background: #0b223e;
+      color: #e8edf4;
+      padding: 24px 8%;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 16px 5%; }
+      nav { gap: 10px; }
+      .hero { padding: 45px 6%; }
+      section { padding: 35px 6%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="brand">RAIDA <span>Think Tank</span></div>
+  <nav>
+    <a href="https://raida-thinktank-2.github.io/">صفحه اصلی رایدا</a>
+    <a href="#about">معرفی گروه</a>
+    <a href="#mission">مأموریت</a>
+    <a href="#topics">محورهای پژوهشی</a>
+    <a href="#cooperation">همکاری علمی</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <h1>گروه علمی نظام سلامت</h1>
+    <div class="slogan">از شناخت مسائل سلامت تا طراحی راه‌حل‌های علمی و سیاستی</div>
+    <p>
+      بستری برای مطالعه میان‌رشته‌ای نظام سلامت، تحلیل سیاست‌ها و ساختارهای
+      حکمرانی، بررسی عدالت در سلامت و ارائه پیشنهادهای مبتنی بر شواهد
+      برای بهبود عملکرد و آینده نظام‌های سلامت.
+    </p>
+    <a class="button" href="#topics">آشنایی با محورهای پژوهشی</a>
+  </div>
+
+  <section id="about">
+    <div class="intro">
+      <h2>معرفی گروه</h2>
+      <p>
+        گروه علمی نظام سلامت در اندیشکده مجازی بین‌المللی رایدا،
+        بر مطالعه نظام‌مند ابعاد علمی، مدیریتی، اقتصادی، اجتماعی و سیاستی سلامت
+        تمرکز دارد. این گروه می‌کوشد با پیوند دانش دانشگاهی، تجربه‌های اجرایی
+        و تحلیل‌های آینده‌نگر، زمینه شناخت دقیق‌تر مسائل و تدوین راه‌حل‌های
+        قابل بررسی و ارزیابی را فراهم کند.
+      </p>
+      <p>
+        توجه به شواهد معتبر، تحلیل تطبیقی تجربه کشورها، شناخت ذی‌نفعان،
+        بررسی پیامدهای سیاست‌ها و ارزیابی امکان اجرای پیشنهادها از
+        رویکردهای مورد توجه این گروه است.
+      </p>
+    </div>
+  </section>
+
+  <section id="mission">
+    <div class="intro">
+      <h2>مأموریت و رویکرد</h2>
+      <p>
+        مأموریت این گروه، کمک به شناخت مسائل اولویت‌دار نظام سلامت،
+        تحلیل علمی سیاست‌ها و ساختارهای حکمرانی و توسعه پیشنهادهایی
+        برای ارتقای کارآمدی، عدالت، کیفیت و پایداری نظام سلامت است.
+      </p>
+      <p>
+        فعالیت‌های پیشنهادی گروه بر پژوهش میان‌رشته‌ای، استفاده از منابع
+        قابل راستی‌آزمایی، گفت‌وگوی علمی میان متخصصان و تفکیک روشن
+        میان یافته‌های پژوهشی، تحلیل‌ها و پیشنهادهای سیاستی استوار است.
+      </p>
+    </div>
+  </section>
+
+  <section id="topics">
+    <div class="intro">
+      <h2>محورهای پژوهشی</h2>
+      <p>حوزه‌های زیر، چارچوب پیشنهادی برای سامان‌دهی فعالیت‌های علمی گروه هستند.</p>
+
+      <div class="topics">
+        <article class="topic">
+          <h3>۱. سیاست‌گذاری سلامت</h3>
+          <p>مطالعه فرایند تدوین، اجرا و ارزیابی سیاست‌های سلامت و بررسی پیامدهای آنها برای مردم و ارائه‌دهندگان خدمات.</p>
+        </article>
+
+        <article class="topic">
+          <h3>۲. حکمرانی نظام سلامت</h3>
+          <p>تحلیل ساختارهای تصمیم‌گیری، تقسیم مسئولیت‌ها، پاسخ‌گویی، شفافیت و هماهنگی میان نهادهای مرتبط با سلامت.</p>
+        </article>
+
+        <article class="topic">
+          <h3>۳. عدالت و دسترسی به خدمات</h3>
+          <p>بررسی نابرابری‌های سلامت، دسترسی منصفانه به خدمات، موانع اقتصادی و اجتماعی و راهکارهای کاهش شکاف‌ها.</p>
+        </article>
+
+        <article class="topic">
+          <h3>۴. اقتصاد و تأمین مالی سلامت</h3>
+          <p>مطالعه هزینه‌ها، منابع مالی، حفاظت مالی خانوارها، خرید خدمات و روش‌های تخصیص کارآمد منابع محدود.</p>
+        </article>
+
+        <article class="topic">
+          <h3>۵. کیفیت و ایمنی خدمات</h3>
+          <p>تحلیل شاخص‌های کیفیت، ایمنی بیمار، تجربه دریافت‌کنندگان خدمات و سازوکارهای بهبود مستمر مراقبت.</p>
+        </article>
+
+        <article class="topic">
+          <h3>۶. نیروی انسانی سلامت</h3>
+          <p>بررسی آموزش، توزیع نیروی انسانی، شرایط حرفه‌ای، انگیزش، ماندگاری و آینده مشاغل نظام سلامت.</p>
+        </article>
+
+        <article class="topic">
+          <h3>۷. فناوری و تحول دیجیتال</h3>
+          <p>مطالعه سلامت دیجیتال، هوش مصنوعی، داده‌های سلامت، فرصت‌های نوآوری و الزامات اخلاقی و حکمرانی آنها.</p>
+        </article>
+
+        <article class="topic">
+          <h3>۸. آینده‌پژوهی نظام سلامت</h3>
+          <p>شناسایی روندهای نوظهور، عدم‌قطعیت‌ها، سناریوهای آینده و راهبردهای آمادگی برای تغییرات نظام سلامت.</p>
+        </article>
+
+        <article class="topic">
+          <h3>۹. ارزیابی و یادگیری سیاستی</h3>
+          <p>توسعه چارچوب‌های ارزیابی، شاخص‌های عملکرد، تحلیل آثار سیاست‌ها و استفاده از نتایج برای اصلاح تصمیم‌ها.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="activities">
+    <div class="intro">
+      <h2>زمینه‌های فعالیت علمی</h2>
+      <p>
+        زمینه‌های پیشنهادی فعالیت شامل تهیه گزارش‌های پژوهشی و سیاستی،
+        مرور شواهد علمی، تحلیل تطبیقی تجربه کشورها، برگزاری نشست‌های تخصصی،
+        تدوین چارچوب‌های ارزیابی و طراحی پروژه‌های مشترک میان‌رشته‌ای است.
+      </p>
+      <p>
+        معرفی هر پروژه، نشست، گزارش یا دستاورد به‌عنوان فعالیت انجام‌شده،
+        منوط به تحقق و تأیید اطلاعات مربوط به آن خواهد بود.
+      </p>
+    </div>
+  </section>
+
+  <section id="cooperation">
+    <div class="intro">
+      <h2>همکاری علمی</h2>
+      <p>
+        از استادان، پژوهشگران، مدیران، کارشناسان و مراکز علمی مرتبط با سلامت
+        برای مشارکت در گفت‌وگوهای علمی، پیشنهاد موضوع‌های پژوهشی،
+        همکاری در تحلیل سیاست‌ها و توسعه مطالعات مشترک دعوت می‌شود.
+      </p>
+      <p>
+        اطلاعات تماس رسمی و شیوه ارسال پیشنهادهای همکاری پس از تعیین
+        راه ارتباطی رسمی اندیشکده در این صفحه درج خواهد شد.
+      </p>
+    </div>
+  </section>
+
+  <div class="back">
+    <a class="button" href="https://raida-thinktank-2.github.io/">بازگشت به صفحه اصلی رایدا</a>
+  </div>
+</main>
+
+<footer>
+  <p>اندیشکده مجازی بین‌المللی رایدا | RAIDA Think Tank</p>
+  <p>گروه علمی نظام سلامت</p>
+  <p>این صفحه معرفی حوزه فعالیت علمی است؛ اطلاعات پروژه‌ها و راه‌های ارتباطی پس از تأیید منتشر خواهد شد.</p>
+</footer>
+
+</body>
+</html>
+```
