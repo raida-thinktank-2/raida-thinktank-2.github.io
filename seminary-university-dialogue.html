@@ -1,0 +1,321 @@
+```html
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="گروه علمی گفت‌وگوی بین‌المللی حوزه و دانشگاه در اندیشکده مجازی بین‌المللی رایدا.">
+  <title>گفت‌وگوی بین‌المللی حوزه و دانشگاه | اندیشکده رایدا</title>
+  <style>
+    :root {
+      --blue: #12345b;
+      --gold: #c9a44c;
+      --light: #f4f7fb;
+      --text: #263445;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Tahoma, Arial, sans-serif;
+      color: var(--text);
+      background: #fff;
+      line-height: 2;
+    }
+
+    header {
+      background: var(--blue);
+      color: white;
+      padding: 18px 7%;
+    }
+
+    .brand {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .brand span { color: var(--gold); }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover { color: var(--gold); }
+
+    .hero {
+      padding: 65px 8%;
+      text-align: center;
+      background: linear-gradient(135deg, #edf3fa, #fffaf0);
+    }
+
+    .hero h1 {
+      color: var(--blue);
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.7;
+      margin: 0 0 15px;
+    }
+
+    .hero .slogan {
+      color: #8b6c24;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .hero p {
+      max-width: 820px;
+      margin: 20px auto;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 12px 5px 0;
+      padding: 9px 22px;
+      background: var(--blue);
+      color: white;
+      border-radius: 7px;
+      text-decoration: none;
+    }
+
+    .button:hover { background: #204b79; }
+
+    section { padding: 45px 8%; }
+
+    section:nth-of-type(even) { background: var(--light); }
+
+    h2 {
+      color: var(--blue);
+      font-size: 26px;
+      margin-top: 0;
+    }
+
+    .intro {
+      max-width: 920px;
+      margin: auto;
+    }
+
+    .topics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .topic {
+      padding: 20px;
+      background: white;
+      border: 1px solid #e1e7ef;
+      border-top: 4px solid var(--gold);
+      border-radius: 10px;
+    }
+
+    .topic h3 { color: var(--blue); }
+
+    .topic p { font-size: 15px; }
+
+    .note {
+      padding: 16px 20px;
+      background: #fffaf0;
+      border-right: 4px solid var(--gold);
+      border-radius: 5px;
+    }
+
+    footer {
+      background: #0b223e;
+      color: #e8edf4;
+      padding: 24px 8%;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #f0d58d;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 16px 5%; }
+      nav { gap: 10px; }
+      .hero { padding: 42px 6%; }
+      section { padding: 34px 6%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="brand">RAIDA <span>Think Tank</span></div>
+  <nav>
+    <a href="index.html">صفحه اصلی رایدا</a>
+    <a href="#about">معرفی گروه</a>
+    <a href="#mission">مأموریت</a>
+    <a href="#topics">محورهای پژوهشی</a>
+    <a href="#cooperation">همکاری علمی</a>
+    <a href="en.html">English</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <h1>گروه علمی گفت‌وگوی بین‌المللی حوزه و دانشگاه</h1>
+    <div class="slogan">هم‌اندیشی علمی برای فهم مسائل و ساختن راه‌حل‌های مشترک</div>
+    <p>
+      بستری برای توسعه تعامل علمی میان حوزه‌های علمیه، دانشگاه‌ها،
+      پژوهشگران و مراکز علمی ایران و جهان با تأکید بر گفت‌وگوی
+      روشمند، همکاری بین‌رشته‌ای و شناخت متقابل.
+    </p>
+    <a class="button" href="#topics">آشنایی با محورهای پژوهشی</a>
+    <a class="button" href="index.html">بازگشت به صفحه اصلی</a>
+  </div>
+
+  <section id="about">
+    <div class="intro">
+      <h2>معرفی گروه</h2>
+      <p>
+        گروه علمی گفت‌وگوی بین‌المللی حوزه و دانشگاه، یکی از پنج حوزه
+        علمی اندیشکده مجازی بین‌المللی رایدا است. این گروه در پی فراهم‌کردن
+        زمینه‌ای برای تبادل دیدگاه‌ها، همکاری‌های علمی و بررسی مسائل
+        مشترک از منظرهای متنوع معرفتی و تخصصی است.
+      </p>
+      <p>
+        گفت‌وگو در این چارچوب، فرایندی روشمند برای تبیین دیدگاه‌ها،
+        طرح پرسش‌های مشترک، ارزیابی استدلال‌ها و شناسایی امکان‌های
+        همکاری علمی به شمار می‌رود.
+      </p>
+    </div>
+  </section>
+
+  <section id="mission">
+    <div class="intro">
+      <h2>مأموریت و اهداف</h2>
+      <p>
+        مأموریت گروه، تسهیل ارتباط پایدار میان پژوهشگران حوزوی و دانشگاهی
+        و تقویت ظرفیت همکاری علمی در سطح ملی و بین‌المللی است.
+      </p>
+      <ul>
+        <li>شناسایی مسائل مشترک میان مطالعات حوزوی و دانشگاهی.</li>
+        <li>توسعه گفت‌وگوی علمی مبتنی بر استدلال، شواهد و احترام متقابل.</li>
+        <li>پشتیبانی از پژوهش‌های میان‌رشته‌ای و مطالعات تطبیقی.</li>
+        <li>فراهم‌کردن زمینه همکاری میان استادان و مراکز علمی.</li>
+        <li>تسهیل انتقال دانش به پیشنهادهای پژوهشی و سیاستی قابل ارزیابی.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="topics">
+    <h2>محورهای پژوهشی</h2>
+    <p>فعالیت‌های علمی گروه می‌تواند در محورهای زیر سامان یابد:</p>
+
+    <div class="topics">
+      <article class="topic">
+        <h3>۱. مبانی و روش‌شناسی گفت‌وگو</h3>
+        <p>
+          مطالعه مبانی معرفتی و روش‌های گفت‌وگوی علمی،
+          تحلیل استدلال‌ها و شیوه‌های ارزیابی دیدگاه‌ها.
+        </p>
+      </article>
+
+      <article class="topic">
+        <h3>۲. مطالعات میان‌رشته‌ای</h3>
+        <p>
+          بررسی مسائل مشترک علوم انسانی، علوم اجتماعی،
+          مطالعات دینی و رشته‌های دانشگاهی.
+        </p>
+      </article>
+
+      <article class="topic">
+        <h3>۳. همکاری‌های علمی بین‌المللی</h3>
+        <p>
+          شناسایی زمینه‌های تعامل دانشگاه‌ها، مراکز پژوهشی،
+          حوزه‌های علمیه و شبکه‌های علمی فرامرزی.
+        </p>
+      </article>
+
+      <article class="topic">
+        <h3>۴. دین، علم و جامعه</h3>
+        <p>
+          بررسی پرسش‌ها و مسائل مشترک در نسبت دین،
+          دانش تخصصی، تحولات اجتماعی و نیازهای معاصر.
+        </p>
+      </article>
+
+      <article class="topic">
+        <h3>۵. شبکه‌سازی پژوهشگران</h3>
+        <p>
+          طراحی زمینه‌های تبادل تجربه، نشست‌های تخصصی،
+          گروه‌های مطالعاتی و پروژه‌های پژوهشی مشترک.
+        </p>
+      </article>
+
+      <article class="topic">
+        <h3>۶. ارزیابی و انتقال دستاوردهای علمی</h3>
+        <p>
+          مطالعه روش‌های ارزیابی کیفیت همکاری‌های علمی
+          و تبدیل یافته‌های پژوهشی به پیشنهادهای کاربردی.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="intro">
+      <h2>برنامه‌ها و طرح‌های علمی</h2>
+      <p>
+        این بخش برای معرفی نشست‌های مشترک، میزگردهای علمی،
+        کارگاه‌های روش‌شناسی، طرح‌های پژوهشی و همکاری‌های
+        میان‌نهادی گروه در نظر گرفته شده است.
+      </p>
+      <p class="note">
+        اطلاعات طرح‌ها و برنامه‌های اجرایی پس از تصویب و تأیید
+        جزئیات آن‌ها در این بخش درج خواهد شد.
+      </p>
+    </div>
+  </section>
+
+  <section id="publications">
+    <div class="intro">
+      <h2>پژوهش‌ها و انتشارات</h2>
+      <p>
+        مقاله‌ها، گزارش‌های پژوهشی، مجموعه نشست‌ها،
+        یادداشت‌های تحلیلی و سایر محصولات علمی مرتبط
+        پس از بررسی و تأیید علمی معرفی خواهند شد.
+      </p>
+    </div>
+  </section>
+
+  <section id="cooperation">
+    <div class="intro">
+      <h2>همکاری علمی</h2>
+      <p>
+        از استادان، پژوهشگران، دانشگاه‌ها، حوزه‌های علمیه
+        و مراکز پژوهشی علاقه‌مند به گفت‌وگو و همکاری علمی
+        در سطح ملی و بین‌المللی دعوت می‌شود در توسعه
+        فعالیت‌های این گروه مشارکت کنند.
+      </p>
+      <p>
+        اطلاعات تماس و شیوه ارسال پیشنهادهای همکاری پس از تعیین
+        راه ارتباطی رسمی رایدا اعلام خواهد شد.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>گروه علمی گفت‌وگوی بین‌المللی حوزه و دانشگاه | RAIDA Think Tank</p>
+  <p>واسطه جهان در گفت‌وگو با کمک دانش در دسترس</p>
+  <p><a href="index.html">بازگشت به صفحه اصلی اندیشکده رایدا</a></p>
+  <p>اطلاعات رسمی طرح‌ها و انتشارات پس از تأیید علمی منتشر خواهد شد.</p>
+</footer>
+
+</body>
+</html>
+```
