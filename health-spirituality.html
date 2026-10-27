@@ -1,0 +1,300 @@
+```html
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="گروه علمی سلامت و معنویت اندیشکده رایدا؛ پژوهش درباره مراقبت معنوی، کرامت انسانی و اخلاق حرفه‌ای در نظام سلامت.">
+  <title>سلامت و معنویت | اندیشکده رایدا</title>
+  <style>
+    :root {
+      --blue: #12345b;
+      --gold: #c9a44c;
+      --light: #f4f7fb;
+      --text: #263445;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Tahoma, Arial, sans-serif;
+      color: var(--text);
+      background: #fff;
+      line-height: 2;
+    }
+
+    header {
+      background: var(--blue);
+      color: white;
+      padding: 24px 8%;
+    }
+
+    .brand {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .brand span { color: var(--gold); }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover { color: var(--gold); }
+
+    .hero {
+      padding: 60px 8%;
+      text-align: center;
+      background: linear-gradient(135deg, #edf3fa, #fffaf0);
+    }
+
+    .hero h1 {
+      color: var(--blue);
+      font-size: clamp(28px, 5vw, 42px);
+      line-height: 1.7;
+      margin: 0 0 15px;
+    }
+
+    .hero p {
+      max-width: 850px;
+      margin: 18px auto;
+    }
+
+    section { padding: 42px 8%; }
+
+    section:nth-of-type(even) { background: var(--light); }
+
+    h2 {
+      color: var(--blue);
+      font-size: 25px;
+      margin-top: 0;
+    }
+
+    .content {
+      max-width: 950px;
+      margin: auto;
+    }
+
+    .topics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .topic {
+      padding: 20px;
+      background: white;
+      border: 1px solid #e1e7ef;
+      border-top: 4px solid var(--gold);
+      border-radius: 9px;
+    }
+
+    .topic h3 { color: var(--blue); }
+
+    .button {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 10px 22px;
+      background: var(--blue);
+      color: white;
+      border-radius: 7px;
+      text-decoration: none;
+    }
+
+    .button:hover { background: #1c4a7b; }
+
+    footer {
+      background: #0b223e;
+      color: #e8edf4;
+      padding: 24px 8%;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 18px 6%; }
+      .hero { padding: 42px 6%; }
+      section { padding: 32px 6%; }
+      nav { gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="brand">RAIDA <span>Think Tank</span></div>
+  <nav>
+    <a href="index.html">صفحه اصلی رایدا</a>
+    <a href="#about">معرفی گروه</a>
+    <a href="#mission">مأموریت</a>
+    <a href="#topics">محورهای پژوهش</a>
+    <a href="#projects">طرح‌های علمی</a>
+    <a href="en.html">English</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <h1>گروه علمی سلامت و معنویت</h1>
+    <p>
+      پژوهش میان‌رشته‌ای درباره معنویت، کرامت انسانی و اخلاق حرفه‌ای
+      با هدف تقویت رویکردهای انسانی و کرامت‌محور در مراقبت سلامت.
+    </p>
+    <a class="button" href="#topics">آشنایی با محورهای پژوهش</a>
+  </div>
+
+  <section id="about">
+    <div class="content">
+      <h2>معرفی گروه</h2>
+      <p>
+        گروه سلامت و معنویت در اندیشکده مجازی بین‌المللی رایدا،
+        بستری برای مطالعه علمی نسبت میان سلامت، معنویت، اخلاق،
+        کرامت انسانی و تجربه بیمار فراهم می‌کند.
+      </p>
+      <p>
+        این گروه با رویکردی میان‌رشته‌ای، ظرفیت علوم سلامت،
+        علوم انسانی، اخلاق، مطالعات دینی و سیاست‌گذاری را برای
+        شناخت مسائل و طراحی راه‌حل‌های قابل ارزیابی به هم پیوند می‌دهد.
+      </p>
+    </div>
+  </section>
+
+  <section id="mission">
+    <div class="content">
+      <h2>مأموریت و رویکرد</h2>
+      <p>
+        مأموریت گروه، توسعه دانش و پیشنهادهای علمی برای تقویت
+        مراقبت کرامت‌محور، توجه مسئولانه به نیازهای معنوی بیماران
+        و ارتقای کیفیت ارتباط میان بیمار، خانواده و کادر درمان است.
+      </p>
+      <p>
+        این گروه میان پژوهش علمی، ملاحظات اخلاقی، شواهد معتبر
+        و نیازهای واقعی نظام سلامت ارتباط برقرار می‌کند.
+        دیدگاه‌ها و پیشنهادهای آن باید متناسب با شواهد و شرایط
+        حرفه‌ای بررسی و ارزیابی شوند.
+      </p>
+    </div>
+  </section>
+
+  <section id="topics">
+    <div class="content">
+      <h2>محورهای پژوهشی</h2>
+      <div class="topics">
+        <article class="topic">
+          <h3>۱. سلامت معنوی</h3>
+          <p>
+            بررسی مفاهیم، ابعاد و شاخص‌های سلامت معنوی و نسبت آن
+            با سلامت جسمی، روانی و اجتماعی.
+          </p>
+        </article>
+
+        <article class="topic">
+          <h3>۲. مراقبت معنوی</h3>
+          <p>
+            مطالعه نیازهای معنوی بیماران و راه‌های پاسخ‌گویی
+            مسئولانه، حرفه‌ای و متناسب با خواست و شرایط آنان.
+          </p>
+        </article>
+
+        <article class="topic">
+          <h3>۳. کرامت انسانی در مراقبت</h3>
+          <p>
+            بررسی حفظ احترام، اختیار، حریم خصوصی، حقوق و ارزش‌های
+            انسانی بیمار در فرایند دریافت خدمات سلامت.
+          </p>
+        </article>
+
+        <article class="topic">
+          <h3>۴. اخلاق حرفه‌ای کادر درمان</h3>
+          <p>
+            مطالعه مسئولیت حرفه‌ای، همدلی، ارتباط مؤثر،
+            احترام متقابل و چالش‌های اخلاقی محیط درمان.
+          </p>
+        </article>
+
+        <article class="topic">
+          <h3>۵. معنویت و تاب‌آوری</h3>
+          <p>
+            بررسی نقش منابع معنوی و حمایت‌های اجتماعی در مواجهه
+            با فشارهای حرفه‌ای و دشواری‌های بیماری، بدون جایگزین
+            کردن آن‌ها با مراقبت تخصصی لازم.
+          </p>
+        </article>
+
+        <article class="topic">
+          <h3>۶. سیاست‌گذاری و ارزیابی</h3>
+          <p>
+            طراحی چارچوب‌ها و شاخص‌های ارزیابی برنامه‌های
+            مراقبت معنوی و کرامت‌محور در مراکز سلامت.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="content">
+      <h2>طرح‌ها و فعالیت‌های علمی</h2>
+      <p>
+        این بخش برای معرفی طرح‌های پژوهشی، نشست‌های علمی،
+        مطالعات مروری، یادداشت‌های سیاستی و برنامه‌های همکاری
+        مرتبط با سلامت و معنویت در نظر گرفته شده است.
+      </p>
+      <p>
+        اطلاعات هر فعالیت پس از تصویب، اجرا یا تأیید علمی،
+        متناسب با وضعیت واقعی آن منتشر خواهد شد.
+        در این مرحله، طرح یا دستاورد تأییدنشده‌ای به‌عنوان
+        فعالیت انجام‌شده معرفی نمی‌شود.
+      </p>
+    </div>
+  </section>
+
+  <section id="publications">
+    <div class="content">
+      <h2>پژوهش‌ها و انتشارات</h2>
+      <p>
+        مقاله‌ها، گزارش‌های علمی، منابع معتبر و محصولات پژوهشی
+        مرتبط با سلامت معنوی، کرامت بیمار و اخلاق حرفه‌ای
+        پس از بررسی و تأیید علمی در این بخش معرفی خواهند شد.
+      </p>
+    </div>
+  </section>
+
+  <section id="cooperation">
+    <div class="content">
+      <h2>همکاری علمی</h2>
+      <p>
+        استادان، پژوهشگران، متخصصان سلامت و مراکز علمی می‌توانند
+        برای توسعه مطالعات میان‌رشته‌ای، طراحی طرح‌های پژوهشی،
+        برگزاری نشست‌های علمی و ارزیابی برنامه‌های مرتبط
+        با سلامت و معنویت با این گروه همکاری کنند.
+      </p>
+      <p>
+        شیوه رسمی ارسال پیشنهادهای همکاری پس از تعیین راه ارتباطی
+        اندیشکده رایدا اعلام خواهد شد.
+      </p>
+      <a class="button" href="index.html">بازگشت به صفحه اصلی رایدا</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>گروه علمی سلامت و معنویت | اندیشکده مجازی بین‌المللی رایدا</p>
+  <p>واسطه جهان در گفت‌وگو با کمک دانش در دسترس</p>
+  <p>صفحه معرفی گروه علمی؛ اطلاعات فعالیت‌ها پس از تأیید منتشر می‌شود.</p>
+</footer>
+
+</body>
+</html>
+```
