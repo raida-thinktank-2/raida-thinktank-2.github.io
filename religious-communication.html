@@ -1,0 +1,319 @@
+```html
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="گروه علمی تبلیغ دینی و ارتباطات تمدنی اندیشکده مجازی بین‌المللی رایدا.">
+  <title>تبلیغ دینی و ارتباطات تمدنی | اندیشکده رایدا</title>
+  <style>
+    :root {
+      --blue: #12345b;
+      --gold: #c9a44c;
+      --light: #f4f7fb;
+      --text: #263445;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Tahoma, Arial, sans-serif;
+      color: var(--text);
+      background: #fff;
+      line-height: 2;
+    }
+
+    header {
+      background: var(--blue);
+      color: white;
+      padding: 18px 7%;
+    }
+
+    .brand {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .brand span { color: var(--gold); }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover { color: var(--gold); }
+
+    .hero {
+      padding: 65px 8%;
+      text-align: center;
+      background: linear-gradient(135deg, #edf3fa, #fffaf0);
+    }
+
+    .hero h1 {
+      color: var(--blue);
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.7;
+      margin: 0 0 15px;
+    }
+
+    .hero .slogan {
+      color: #8b6c24;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .hero p {
+      max-width: 820px;
+      margin: 20px auto;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 12px 5px 0;
+      padding: 9px 22px;
+      background: var(--blue);
+      color: white;
+      border-radius: 7px;
+      text-decoration: none;
+    }
+
+    .button:hover { background: #204b79; }
+
+    section { padding: 45px 8%; }
+
+    section:nth-of-type(even) { background: var(--light); }
+
+    h2 {
+      color: var(--blue);
+      font-size: 26px;
+      margin-top: 0;
+    }
+
+    .intro {
+      max-width: 920px;
+      margin: auto;
+    }
+
+    .topics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .topic {
+      padding: 20px;
+      background: white;
+      border: 1px solid #e1e7ef;
+      border-top: 4px solid var(--gold);
+      border-radius: 10px;
+    }
+
+    .topic h3 { color: var(--blue); }
+
+    .topic p { font-size: 15px; }
+
+    .note {
+      padding: 16px 20px;
+      background: #fffaf0;
+      border-right: 4px solid var(--gold);
+      border-radius: 5px;
+    }
+
+    footer {
+      background: #0b223e;
+      color: #e8edf4;
+      padding: 24px 8%;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #f0d58d;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 16px 5%; }
+      nav { gap: 10px; }
+      .hero { padding: 42px 6%; }
+      section { padding: 34px 6%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="brand">RAIDA <span>Think Tank</span></div>
+  <nav>
+    <a href="index.html">صفحه اصلی رایدا</a>
+    <a href="#about">معرفی گروه</a>
+    <a href="#mission">مأموریت</a>
+    <a href="#topics">محورهای پژوهشی</a>
+    <a href="#cooperation">همکاری علمی</a>
+    <a href="en.html">English</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <h1>گروه علمی تبلیغ دینی و ارتباطات تمدنی</h1>
+    <div class="slogan">گفت‌وگو، شناخت متقابل و ارتباط مؤثر میان فرهنگ‌ها</div>
+    <p>
+      بستری برای مطالعه علمی روش‌های تبلیغ دینی، ارتباطات بین‌فرهنگی،
+      گفت‌وگوی ادیان و نقش ارتباطات در تعاملات تمدنی جهان معاصر.
+    </p>
+    <a class="button" href="#topics">آشنایی با محورهای پژوهشی</a>
+    <a class="button" href="index.html">بازگشت به صفحه اصلی</a>
+  </div>
+
+  <section id="about">
+    <div class="intro">
+      <h2>معرفی گروه</h2>
+      <p>
+        گروه علمی تبلیغ دینی و ارتباطات تمدنی، یکی از پنج حوزه علمی
+        اندیشکده مجازی بین‌المللی رایدا است. این گروه زمینه‌ای برای
+        بررسی روش‌های انتقال و تبیین معارف دینی، شناخت مخاطبان،
+        ارتباطات بین‌فرهنگی و توسعه گفت‌وگوی علمی میان سنت‌های فکری
+        و تمدن‌های گوناگون فراهم می‌کند.
+      </p>
+      <p>
+        رویکرد گروه، پژوهش‌محور، میان‌رشته‌ای و متناسب با تحولات
+        اجتماعی، فرهنگی و ارتباطی جهان معاصر است.
+      </p>
+    </div>
+  </section>
+
+  <section id="mission">
+    <div class="intro">
+      <h2>مأموریت و اهداف</h2>
+      <p>
+        مأموریت گروه، توسعه شناخت علمی از ظرفیت‌ها و روش‌های تبلیغ دینی
+        و ارتباطات تمدنی و فراهم‌کردن زمینه طراحی الگوها و راهبردهای
+        ارتباطی متناسب با نیازها و شرایط جوامع مختلف است.
+      </p>
+      <ul>
+        <li>مطالعه مبانی و روش‌های تبلیغ دینی در جهان معاصر.</li>
+        <li>تقویت شناخت متقابل و گفت‌وگوی سازنده میان ادیان و فرهنگ‌ها.</li>
+        <li>بررسی فرصت‌ها و چالش‌های ارتباطات دینی در فضای دیجیتال.</li>
+        <li>توسعه پژوهش‌های مشترک میان پژوهشگران و مراکز علمی.</li>
+        <li>ارائه پیشنهادهای علمی و سیاستی مبتنی بر شواهد و ارزیابی‌پذیر.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="topics">
+    <h2>محورهای پژوهشی</h2>
+    <p>فعالیت‌های علمی گروه می‌تواند در محورهای زیر سامان یابد:</p>
+
+    <div class="topics">
+      <article class="topic">
+        <h3>۱. مبانی و روش‌های تبلیغ دینی</h3>
+        <p>
+          مطالعه مبانی نظری، روش‌های تبیین معارف دینی،
+          مخاطب‌شناسی و شیوه‌های ارتباط مؤثر.
+        </p>
+      </article>
+
+      <article class="topic">
+        <h3>۲. ارتباطات بین‌فرهنگی و بین‌دینی</h3>
+        <p>
+          بررسی پیش‌شرط‌های گفت‌وگوی سازنده، شناخت متقابل،
+          تفاوت‌های فرهنگی و راه‌های کاهش سوءبرداشت.
+        </p>
+      </article>
+
+      <article class="topic">
+        <h3>۳. دین و رسانه‌های نوین</h3>
+        <p>
+          مطالعه ظرفیت‌ها و چالش‌های رسانه‌های دیجیتال،
+          شبکه‌های اجتماعی و فناوری‌های نو در ارتباطات دینی.
+        </p>
+      </article>
+
+      <article class="topic">
+        <h3>۴. ارتباطات و تعاملات تمدنی</h3>
+        <p>
+          بررسی نقش ارتباطات علمی و فرهنگی در تعامل تمدن‌ها،
+          همکاری بین‌المللی و شناخت میراث فکری جوامع.
+        </p>
+      </article>
+
+      <article class="topic">
+        <h3>۵. مخاطب‌شناسی و نیازهای معاصر</h3>
+        <p>
+          مطالعه نیازها، پرسش‌ها و تجربه‌های گروه‌های مختلف مخاطبان
+          و طراحی رویکردهای متناسب با شرایط آنان.
+        </p>
+      </article>
+
+      <article class="topic">
+        <h3>۶. ارزیابی اثربخشی ارتباطات دینی</h3>
+        <p>
+          طراحی شاخص‌ها و روش‌های ارزیابی برای بررسی کیفیت،
+          دسترس‌پذیری و پیامدهای فعالیت‌های ارتباطی.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="intro">
+      <h2>طرح‌ها و برنامه‌های پژوهشی</h2>
+      <p>
+        این بخش برای معرفی طرح‌های پژوهشی، مطالعات تطبیقی،
+        نشست‌های تخصصی، کارگاه‌ها و پروژه‌های مشترک گروه در نظر گرفته شده است.
+      </p>
+      <p class="note">
+        عنوان و گزارش طرح‌های اجرایی پس از تصویب و تأیید اطلاعات،
+        در این بخش درج خواهد شد.
+      </p>
+    </div>
+  </section>
+
+  <section id="publications">
+    <div class="intro">
+      <h2>پژوهش‌ها و انتشارات</h2>
+      <p>
+        مقاله‌های علمی، گزارش‌های پژوهشی، یادداشت‌های تحلیلی،
+        منابع آموزشی و محصولات علمی مرتبط با فعالیت‌های گروه
+        پس از بررسی و تأیید علمی در این بخش معرفی خواهند شد.
+      </p>
+    </div>
+  </section>
+
+  <section id="cooperation">
+    <div class="intro">
+      <h2>همکاری علمی</h2>
+      <p>
+        از استادان، پژوهشگران، دانشگاه‌ها و مراکز علمی علاقه‌مند
+        به همکاری در پژوهش‌های میان‌رشته‌ای، برگزاری نشست‌های تخصصی،
+        مطالعات تطبیقی و توسعه طرح‌های مشترک علمی دعوت می‌شود.
+      </p>
+      <p>
+        اطلاعات تماس و شیوه ارسال پیشنهادهای همکاری پس از تعیین
+        راه ارتباطی رسمی رایدا اعلام خواهد شد.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>گروه علمی تبلیغ دینی و ارتباطات تمدنی | RAIDA Think Tank</p>
+  <p>واسطه جهان در گفت‌وگو با کمک دانش در دسترس</p>
+  <p><a href="index.html">بازگشت به صفحه اصلی اندیشکده رایدا</a></p>
+  <p>اطلاعات رسمی طرح‌ها و انتشارات پس از تأیید علمی منتشر خواهد شد.</p>
+</footer>
+
+</body>
+</html>
+```
