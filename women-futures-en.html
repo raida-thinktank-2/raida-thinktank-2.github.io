@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,17 +8,15 @@
   <title>Women's Futures Studies and Foresight | RAIDA</title>
   <style>
     :root {
-      --navy: #12345a;
+      --navy: #12345b;
       --blue: #1c527d;
-      --gold: #c9a34a;
+      --gold: #c9a44c;
       --light: #f4f7fb;
       --text: #243447;
       --white: #ffffff;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -31,20 +29,56 @@
     header {
       background: linear-gradient(135deg, var(--navy), var(--blue));
       color: var(--white);
-      padding: 42px 20px;
-      text-align: center;
+      padding: 22px 7%;
       border-bottom: 5px solid var(--gold);
     }
 
-    header h1 {
-      margin: 0 0 12px;
-      font-size: clamp(1.8rem, 4vw, 2.6rem);
-      line-height: 1.3;
+    .brand-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      max-width: 1100px;
+      margin: 0 auto;
     }
 
-    header p {
-      max-width: 780px;
+    .brand-logo {
+      width: 76px;
+      height: 76px;
+      object-fit: contain;
+      background: white;
+      border-radius: 12px;
+      padding: 5px;
+      flex-shrink: 0;
+    }
+
+    .brand {
+      font-size: 25px;
+      font-weight: bold;
+      line-height: 1.5;
+    }
+
+    .brand span { color: var(--gold); }
+
+    .brand-subtitle {
+      font-size: 13px;
+      color: #e8edf4;
+    }
+
+    .page-heading {
+      max-width: 900px;
+      margin: 25px auto 0;
+      text-align: center;
+    }
+
+    .page-heading h1 {
+      margin: 0 0 12px;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      line-height: 1.4;
+    }
+
+    .page-heading p {
       margin: 0 auto;
+      max-width: 780px;
       font-size: 1.05rem;
     }
 
@@ -63,9 +97,7 @@
       text-decoration: none;
     }
 
-    nav a:hover {
-      color: #9a741d;
-    }
+    nav a:hover { color: #9a741d; }
 
     main {
       max-width: 1000px;
@@ -88,13 +120,9 @@
       font-size: 1.45rem;
     }
 
-    ul {
-      padding-left: 24px;
-    }
+    ul { padding-left: 24px; }
 
-    li {
-      margin-bottom: 8px;
-    }
+    li { margin-bottom: 8px; }
 
     .highlight {
       background: #edf3f9;
@@ -104,7 +132,7 @@
     }
 
     footer {
-      background: var(--navy);
+      background: #0b223e;
       color: var(--white);
       text-align: center;
       padding: 24px 15px;
@@ -117,28 +145,45 @@
     }
 
     @media (max-width: 600px) {
-      header {
-        padding: 32px 16px;
+      header { padding: 18px 5%; }
+
+      .brand-logo {
+        width: 60px;
+        height: 60px;
       }
 
-      main {
-        padding: 0 12px;
-      }
+      .brand { font-size: 21px; }
 
-      section {
-        padding: 19px;
-      }
+      .brand-subtitle { font-size: 11px; }
+
+      .page-heading { margin-top: 22px; }
+
+      nav a { margin: 5px 8px; }
+
+      main { padding: 0 12px; }
+
+      section { padding: 19px; }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Women's Futures Studies and Foresight</h1>
-    <p>
-      Exploring emerging changes, shaping possible futures, and supporting
-      women's meaningful participation in social development.
-    </p>
+    <div class="brand-row">
+      <img class="brand-logo" src="logo%20raida.png" alt="RAIDA Think Tank logo">
+      <div>
+        <div class="brand">RAIDA <span>Think Tank</span></div>
+        <div class="brand-subtitle">International Virtual Think Tank</div>
+      </div>
+    </div>
+
+    <div class="page-heading">
+      <h1>Women's Futures Studies and Foresight</h1>
+      <p>
+        Exploring emerging changes, shaping possible futures, and supporting
+        women's meaningful participation in social development.
+      </p>
+    </div>
   </header>
 
   <nav>
@@ -225,10 +270,9 @@
 
   <footer>
     <p><strong>RAIDA International Virtual Think Tank</strong></p>
-    <p>Mediating the world in conversation through accessible knowledge.</p>
+    <p>Connecting the World Through Dialogue and Accessible Knowledge.</p>
     <p><a href="en.html">Return to the English Homepage</a></p>
   </footer>
 
 </body>
 </html>
-```
