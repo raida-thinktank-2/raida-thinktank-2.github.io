@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="گروه مطالعات آینده و آینده‌پژوهی بانوان اندیشکده رایدا؛ روندپژوهی، سناریونویسی و طراحی راهبردهای آینده‌نگر.">
   <title>مطالعات آینده و آینده‌پژوهی بانوان | رایدا</title>
+
   <style>
     :root {
       --blue: #12345b;
@@ -13,8 +14,15 @@
       --light: #f4f7fb;
       --text: #263445;
     }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: Tahoma, Arial, sans-serif;
@@ -22,48 +30,87 @@
       line-height: 2;
       background: white;
     }
+
     header {
       background: var(--blue);
       color: white;
       padding: 18px 7%;
     }
+
+    .brand-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .brand-logo {
+      display: block;
+      width: 76px;
+      height: 76px;
+      object-fit: contain;
+      flex-shrink: 0;
+      background: white;
+      border-radius: 10px;
+      padding: 5px;
+    }
+
     .brand {
       font-size: 24px;
       font-weight: bold;
+      line-height: 1.6;
     }
-    .brand span { color: var(--gold); }
+
+    .brand span {
+      color: var(--gold);
+    }
+
+    .brand-subtitle {
+      color: #e8edf4;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
     nav {
       display: flex;
       flex-wrap: wrap;
       gap: 16px;
       margin-top: 12px;
     }
+
     nav a {
       color: white;
       text-decoration: none;
       font-size: 14px;
     }
-    nav a:hover { color: var(--gold); }
+
+    nav a:hover {
+      color: var(--gold);
+    }
+
     .hero {
       padding: 65px 8%;
       text-align: center;
       background: linear-gradient(135deg, #edf3fa, #fffaf0);
     }
+
     .eyebrow {
       color: #8b6c24;
       font-size: 14px;
       font-weight: bold;
     }
+
     h1 {
       color: var(--blue);
       font-size: clamp(29px, 4vw, 43px);
       line-height: 1.6;
       margin: 12px 0;
     }
+
     .hero p {
       max-width: 850px;
       margin: 15px auto;
     }
+
     .button {
       display: inline-block;
       margin: 10px 5px;
@@ -73,25 +120,43 @@
       border-radius: 7px;
       text-decoration: none;
     }
+
+    .button:hover {
+      background: #1d4b7d;
+    }
+
     .button.secondary {
       color: var(--blue);
       background: white;
       border: 1px solid var(--blue);
     }
-    section { padding: 42px 8%; }
-    section:nth-of-type(even) { background: var(--light); }
+
+    section {
+      padding: 42px 8%;
+    }
+
+    section:nth-of-type(even) {
+      background: var(--light);
+    }
+
     h2 {
       color: var(--blue);
       font-size: 26px;
       margin-top: 0;
     }
-    .content { max-width: 1000px; margin: auto; }
+
+    .content {
+      max-width: 1000px;
+      margin: auto;
+    }
+
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 16px;
       margin-top: 22px;
     }
+
     .card {
       background: white;
       padding: 20px;
@@ -99,14 +164,23 @@
       border-top: 4px solid var(--gold);
       border-radius: 9px;
     }
-    .card h3 { color: var(--blue); margin-top: 0; }
-    .card p { font-size: 14px; }
+
+    .card h3 {
+      color: var(--blue);
+      margin-top: 0;
+    }
+
+    .card p {
+      font-size: 14px;
+    }
+
     .note {
       padding: 16px 20px;
       background: #fffaf0;
       border-right: 4px solid var(--gold);
       margin-top: 20px;
     }
+
     footer {
       background: #0b223e;
       color: #e8edf4;
@@ -114,27 +188,77 @@
       font-size: 13px;
       text-align: center;
     }
-    footer a { color: #f1d58b; }
+
+    footer a {
+      color: #f1d58b;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
     @media (max-width: 600px) {
-      header { padding: 16px 5%; }
-      .hero { padding: 42px 6%; }
-      section { padding: 32px 6%; }
-      nav { gap: 10px; }
+      header {
+        padding: 16px 5%;
+      }
+
+      .brand-row {
+        gap: 12px;
+      }
+
+      .brand-logo {
+        width: 60px;
+        height: 60px;
+      }
+
+      .brand {
+        font-size: 21px;
+      }
+
+      .brand-subtitle {
+        font-size: 11px;
+      }
+
+      .hero {
+        padding: 42px 6%;
+      }
+
+      section {
+        padding: 32px 6%;
+      }
+
+      nav {
+        gap: 10px;
+      }
     }
   </style>
 </head>
+
 <body>
 
 <header>
-  <div class="brand">RAIDA <span>Think Tank</span></div>
+  <div class="brand-row">
+    <img
+      class="brand-logo"
+      src="logo%20raida.png"
+      alt="لوگوی اندیشکده رایدا"
+    >
+    <div>
+      <div class="brand">RAIDA <span>Think Tank</span></div>
+      <div class="brand-subtitle">International Virtual Think Tank</div>
+    </div>
+  </div>
+
   <nav>
     <a href="index.html">صفحه اصلی رایدا</a>
     <a href="#about">معرفی گروه</a>
     <a href="#mission">مأموریت</a>
     <a href="#topics">محورهای پژوهشی</a>
+    <a href="#projects">طرح‌های پژوهشی</a>
     <a href="#outputs">محصولات علمی</a>
     <a href="#cooperation">همکاری</a>
-    <a href="en.html">English</a>
+    <a href="women-futures-en.html">English</a>
   </nav>
 </header>
 
@@ -188,6 +312,7 @@
     <div class="content">
       <h2>محورهای پژوهشی</h2>
       <p>فعالیت‌های پژوهشی گروه می‌تواند در محورهای زیر سامان یابد:</p>
+
       <div class="cards">
         <article class="card">
           <h3>۱. روندپژوهی و دیده‌بانی آینده</h3>
@@ -196,6 +321,7 @@
             مؤثر بر زندگی بانوان و خانواده.
           </p>
         </article>
+
         <article class="card">
           <h3>۲. سناریوها و آینده‌های بدیل</h3>
           <p>
@@ -203,6 +329,7 @@
             گزینه‌های گوناگون برای تصمیم‌گیری امروز.
           </p>
         </article>
+
         <article class="card">
           <h3>۳. آینده خانواده و روابط اجتماعی</h3>
           <p>
@@ -210,6 +337,7 @@
             مشارکت اجتماعی و نیازهای نوپدید.
           </p>
         </article>
+
         <article class="card">
           <h3>۴. فناوری و آینده بانوان</h3>
           <p>
@@ -217,6 +345,7 @@
             آینده مشاغل و تغییرات مهارتی.
           </p>
         </article>
+
         <article class="card">
           <h3>۵. سیاست‌پژوهی و راهبردهای آینده‌نگر</h3>
           <p>
@@ -224,6 +353,7 @@
             تدوین شاخص‌هایی برای پایش تحولات.
           </p>
         </article>
+
         <article class="card">
           <h3>۶. روش‌ها و ابزارهای آینده‌پژوهی</h3>
           <p>
@@ -283,9 +413,15 @@
 </main>
 
 <footer>
-  <p>گروه مطالعات آینده و آینده‌پژوهی بانوان | اندیشکده مجازی بین‌المللی رایدا</p>
-  <p><a href="index.html">بازگشت به صفحه اصلی رایدا</a></p>
-  <p>صفحه اولیه معرفی گروه؛ اطلاعات پروژه‌ها و محصولات پس از تأیید افزوده می‌شوند.</p>
+  <p>گروه مطالعات آینده و آینده‌پژوهی بانوان</p>
+  <p>اندیشکده مجازی بین‌المللی رایدا | RAIDA International Virtual Think Tank</p>
+  <p>واسطه جهان در گفت‌وگو با کمک دانش در دسترس</p>
+  <p>
+    <a href="index.html">بازگشت به صفحه اصلی رایدا</a>
+    |
+    <a href="women-futures-en.html">English</a>
+  </p>
+  <p>اطلاعات پروژه‌ها و محصولات پس از تأیید به این صفحه افزوده می‌شوند.</p>
 </footer>
 
 </body>
