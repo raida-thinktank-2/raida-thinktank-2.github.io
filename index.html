@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="اندیشکده مجازی بین‌المللی رایدا؛ پیوند دانش، آینده‌پژوهی و گفت‌وگوی علمی برای حل مسائل جهان.">
   <title>اندیشکده رایدا | RAIDA Think Tank</title>
+
   <style>
     :root {
       --blue: #12345b;
@@ -14,7 +15,9 @@
       --text: #263445;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
@@ -30,12 +33,38 @@
       padding: 18px 7%;
     }
 
+    .brand-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .brand-logo {
+      display: block;
+      width: 76px;
+      height: 76px;
+      object-fit: contain;
+      flex-shrink: 0;
+      background: white;
+      border-radius: 10px;
+      padding: 5px;
+    }
+
     .brand {
       font-size: 25px;
       font-weight: bold;
+      line-height: 1.6;
     }
 
-    .brand span { color: var(--gold); }
+    .brand span {
+      color: var(--gold);
+    }
+
+    .brand-subtitle {
+      font-size: 13px;
+      color: #e8edf4;
+      line-height: 1.8;
+    }
 
     nav {
       display: flex;
@@ -50,7 +79,9 @@
       font-size: 14px;
     }
 
-    nav a:hover { color: var(--gold); }
+    nav a:hover {
+      color: var(--gold);
+    }
 
     .hero {
       padding: 75px 8%;
@@ -86,9 +117,17 @@
       text-decoration: none;
     }
 
-    section { padding: 48px 8%; }
+    .button:hover {
+      background: #1d4b7d;
+    }
 
-    section:nth-of-type(even) { background: var(--light); }
+    section {
+      padding: 48px 8%;
+    }
+
+    section:nth-of-type(even) {
+      background: var(--light);
+    }
 
     h2 {
       color: var(--blue);
@@ -116,7 +155,9 @@
       border-radius: 10px;
     }
 
-    .group h3 { color: var(--blue); }
+    .group h3 {
+      color: var(--blue);
+    }
 
     .group h3 a {
       color: inherit;
@@ -128,7 +169,9 @@
       text-decoration: underline;
     }
 
-    .group p { font-size: 15px; }
+    .group p {
+      font-size: 15px;
+    }
 
     footer {
       background: #0b223e;
@@ -144,17 +187,61 @@
     }
 
     @media (max-width: 600px) {
-      header { padding: 16px 5%; }
-      nav { gap: 10px; }
-      .hero { padding: 48px 6%; }
-      section { padding: 36px 6%; }
+      header {
+        padding: 16px 5%;
+      }
+
+      .brand-row {
+        gap: 12px;
+      }
+
+      .brand-logo {
+        width: 60px;
+        height: 60px;
+      }
+
+      .brand {
+        font-size: 21px;
+      }
+
+      .brand-subtitle {
+        font-size: 11px;
+      }
+
+      nav {
+        gap: 10px;
+      }
+
+      .hero {
+        padding: 48px 6%;
+      }
+
+      .hero .slogan {
+        font-size: 18px;
+      }
+
+      section {
+        padding: 36px 6%;
+      }
     }
   </style>
 </head>
+
 <body>
 
 <header>
-  <div class="brand">RAIDA <span>Think Tank</span></div>
+  <div class="brand-row">
+    <img
+      class="brand-logo"
+      src="logo%20raida.png"
+      alt="لوگوی اندیشکده رایدا"
+    >
+    <div>
+      <div class="brand">RAIDA <span>Think Tank</span></div>
+      <div class="brand-subtitle">International Virtual Think Tank</div>
+    </div>
+  </div>
+
   <nav>
     <a href="#about">درباره رایدا</a>
     <a href="#mission">مأموریت</a>
@@ -205,28 +292,43 @@
 
     <div class="groups">
       <article class="group">
-        <h3><a href="https://raida-thinktank-2.github.io/women-futures.html">۱. مطالعات آینده و آینده‌پژوهی بانوان</a></h3>
-        <p>مطالعه روندها و سناریوهای آینده بانوان، خانواده و نقش‌آفرینی اجتماعی؛ همراه با طراحی راهبردها و سیاست‌های آینده‌نگر.</p>
+        <h3><a href="women-futures.html">۱. مطالعات آینده و آینده‌پژوهی بانوان</a></h3>
+        <p>
+          مطالعه روندها و سناریوهای آینده بانوان، خانواده و نقش‌آفرینی اجتماعی؛
+          همراه با طراحی راهبردها و سیاست‌های آینده‌نگر.
+        </p>
       </article>
 
       <article class="group">
-        <h3><a href="https://raida-thinktank-2.github.io/religious-communication.html">۲. تبلیغ دینی و ارتباطات تمدنی</a></h3>
-        <p>پژوهش در روش‌های نوین تبلیغ دینی، ارتباطات بین‌فرهنگی، گفت‌وگوی ادیان و انتقال مؤثر معارف در فضای معاصر.</p>
+        <h3><a href="religious-communication.html">۲. تبلیغ دینی و ارتباطات تمدنی</a></h3>
+        <p>
+          پژوهش در روش‌های نوین تبلیغ دینی، ارتباطات بین‌فرهنگی،
+          گفت‌وگوی ادیان و انتقال مؤثر معارف در فضای معاصر.
+        </p>
       </article>
 
       <article class="group">
-        <h3><a href="https://raida-thinktank-2.github.io/seminary-university-dialogue.html">۳. گفت‌وگوی بین‌المللی حوزه و دانشگاه</a></h3>
-        <p>ایجاد زمینه همکاری میان استادان و پژوهشگران حوزه و دانشگاه در ایران و جهان و پشتیبانی از طرح‌های مشترک علمی.</p>
+        <h3><a href="seminary-university-dialogue.html">۳. گفت‌وگوی بین‌المللی حوزه و دانشگاه</a></h3>
+        <p>
+          ایجاد زمینه همکاری میان استادان و پژوهشگران حوزه و دانشگاه
+          در ایران و جهان و پشتیبانی از طرح‌های مشترک علمی.
+        </p>
       </article>
 
       <article class="group">
-        <h3><a href="https://raida-thinktank-2.github.io/health-spirituality.html">۴. سلامت و معنویت</a></h3>
-        <p>مطالعه ابعاد معنوی سلامت، مراقبت معنوی، کرامت انسانی، اخلاق حرفه‌ای و نقش معنویت در تجربه بیمار و مراقبت.</p>
+        <h3><a href="health-spirituality.html">۴. سلامت و معنویت</a></h3>
+        <p>
+          مطالعه ابعاد معنوی سلامت، مراقبت معنوی، کرامت انسانی،
+          اخلاق حرفه‌ای و نقش معنویت در تجربه بیمار و مراقبت.
+        </p>
       </article>
 
       <article class="group">
-        <h3><a href="https://raida-thinktank-2.github.io/health-systems.html">۵. نظام سلامت</a></h3>
-        <p>پژوهش درباره سیاست‌گذاری سلامت، حکمرانی نظام سلامت، عدالت در دسترسی به خدمات، کیفیت مراقبت و ارزیابی برنامه‌ها.</p>
+        <h3><a href="health-systems.html">۵. نظام سلامت</a></h3>
+        <p>
+          پژوهش درباره سیاست‌گذاری سلامت، حکمرانی نظام سلامت،
+          عدالت در دسترسی به خدمات، کیفیت مراقبت و ارزیابی برنامه‌ها.
+        </p>
       </article>
     </div>
   </section>
@@ -249,7 +351,9 @@
         استادان، پژوهشگران، دانشگاه‌ها و مراکز علمی می‌توانند برای همکاری پژوهشی،
         برگزاری نشست‌های علمی، ارائه ایده و توسعه طرح‌های مشترک با رایدا همراه شوند.
       </p>
-      <p>اطلاعات تماس و شیوه ارسال پیشنهادهای همکاری پس از تعیین راه ارتباطی رسمی درج خواهد شد.</p>
+      <p>
+        اطلاعات تماس و شیوه ارسال پیشنهادهای همکاری پس از تعیین راه ارتباطی رسمی درج خواهد شد.
+      </p>
     </div>
   </section>
 
@@ -267,7 +371,7 @@
         health and spirituality, and health systems.
       </p>
       <p class="language-note">
-        A complete English-language version will be developed as a separate page.
+        برای مطالعه نسخه انگلیسی کامل، از پیوند English در بالای صفحه استفاده کنید.
       </p>
     </div>
   </section>
