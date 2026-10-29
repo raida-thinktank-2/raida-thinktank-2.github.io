@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,9 +17,7 @@
       --white: #ffffff;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -100,9 +98,7 @@
       text-decoration: none;
     }
 
-    nav a:hover {
-      color: #9a741d;
-    }
+    nav a:hover { color: #9a741d; }
 
     main {
       max-width: 1000px;
@@ -125,13 +121,8 @@
       font-size: 1.45rem;
     }
 
-    ul {
-      padding-left: 24px;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 8px; }
 
     .highlight {
       background: #edf3f9;
@@ -153,39 +144,28 @@
       text-decoration: none;
     }
 
-    @media (max-width: 600px) {
-      .brand-header {
-        padding: 14px 16px;
-      }
+    .language-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 12px 0;
+    }
 
-      .brand-inner {
-        gap: 12px;
-      }
+    @media (max-width: 600px) {
+      .brand-header { padding: 14px 16px; }
+      .brand-inner { gap: 12px; }
 
       .brand-logo {
         width: 60px;
         height: 60px;
       }
 
-      .brand-name {
-        font-size: 1.25rem;
-      }
-
-      .brand-subtitle {
-        font-size: 0.82rem;
-      }
-
-      .page-heading {
-        padding: 32px 16px;
-      }
-
-      main {
-        padding: 0 12px;
-      }
-
-      section {
-        padding: 19px;
-      }
+      .brand-name { font-size: 1.25rem; }
+      .brand-subtitle { font-size: 0.82rem; }
+      .page-heading { padding: 32px 16px; }
+      main { padding: 0 12px; }
+      section { padding: 19px; }
     }
   </style>
 </head>
@@ -212,7 +192,8 @@
 
   <nav>
     <a href="en.html">RAIDA Home</a>
-    <a href="health-systems.html">صفحه فارسی</a>
+    <a href="health-systems.html" lang="fa" dir="rtl">صفحه فارسی</a>
+    <a href="health-systems-ar.html" lang="ar" dir="rtl">العربية</a>
   </nav>
 
   <main>
@@ -300,8 +281,20 @@
   <footer>
     <p><strong>RAIDA International Virtual Think Tank</strong></p>
     <p>Connecting the World Through Dialogue and Accessible Knowledge.</p>
-    <p><a href="en.html">Return to the English Homepage</a></p>
+
+    <div class="language-links">
+      <a href="health-systems.html" lang="fa" dir="rtl">فارسی</a>
+      <a href="health-systems-en.html">English</a>
+      <a href="health-systems-ar.html" lang="ar" dir="rtl">العربية</a>
+    </div>
+
+    <p>
+      <a href="index.html" lang="fa" dir="rtl">صفحه اصلی فارسی</a> |
+      <a href="en.html">English Homepage</a> |
+      <a href="ar.html" lang="ar" dir="rtl">الرئيسية العربية</a>
+    </p>
   </footer>
 
 </body>
 </html>
+```
