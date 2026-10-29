@@ -173,6 +173,23 @@
       font-size: 15px;
     }
 
+    .footer-languages {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 14px 0;
+    }
+
+    .footer-languages a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    .footer-languages a:hover {
+      text-decoration: underline;
+    }
+
     footer {
       background: #0b223e;
       color: #e8edf4;
@@ -244,7 +261,8 @@
     <a href="#groups">Research Groups</a>
     <a href="#research">Research &amp; Publications</a>
     <a href="#cooperation">Collaboration</a>
-    <a href="index.html">فارسی</a>
+    <a href="index.html" lang="fa" dir="rtl">فارسی</a>
+    <a href="ar.html" lang="ar" dir="rtl">العربية</a>
   </nav>
 </header>
 
@@ -371,6 +389,13 @@
 <footer>
   <p>RAIDA International Virtual Think Tank</p>
   <p>Knowledge, Dialogue, and Research for a Better Future</p>
+
+  <div class="footer-languages" aria-label="Choose language">
+    <a href="index.html" lang="fa" dir="rtl">فارسی</a>
+    <a href="en.html" lang="en" dir="ltr">English</a>
+    <a href="ar.html" lang="ar" dir="rtl">العربية</a>
+  </div>
+
   <p>Initial website version. Official contact and collaboration information will be added after confirmation.</p>
 </footer>
 
