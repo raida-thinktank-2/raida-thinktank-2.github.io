@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -142,6 +142,7 @@
     footer a {
       color: #f1d58b;
       text-decoration: none;
+      margin: 0 8px;
     }
 
     @media (max-width: 600px) {
@@ -186,9 +187,11 @@
     </div>
   </header>
 
-  <nav>
+  <nav aria-label="Language and main navigation">
     <a href="en.html">RAIDA Home</a>
-    <a href="religious-communication.html">صفحه فارسی</a>
+    <a href="religious-communication-en.html" lang="en">English</a>
+    <a href="religious-communication.html" lang="fa" dir="rtl">فارسی</a>
+    <a href="religious-communication-ar.html" lang="ar" dir="rtl">العربية</a>
   </nav>
 
   <main>
@@ -272,8 +275,18 @@
   <footer>
     <p><strong>RAIDA International Virtual Think Tank</strong></p>
     <p>Connecting the World Through Dialogue and Accessible Knowledge.</p>
-    <p><a href="en.html">Return to the English Homepage</a></p>
+    <p>
+      <a href="index.html" lang="fa" dir="rtl">صفحه اصلی فارسی</a> |
+      <a href="en.html">English Homepage</a> |
+      <a href="ar.html" lang="ar" dir="rtl">الصفحة الرئيسية العربية</a>
+    </p>
+    <p>
+      <a href="religious-communication-en.html" lang="en">English</a> |
+      <a href="religious-communication.html" lang="fa" dir="rtl">فارسی</a> |
+      <a href="religious-communication-ar.html" lang="ar" dir="rtl">العربية</a>
+    </p>
   </footer>
 
 </body>
 </html>
+```
