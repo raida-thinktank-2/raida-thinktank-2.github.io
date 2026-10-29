@@ -1,0 +1,390 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="المجموعة العلمية للحوار الدولي بين الحوزة العلمية والجامعة في مركز رايدا الدولي الافتراضي للدراسات الفكرية.">
+  <title>الحوار الدولي بين الحوزة العلمية والجامعة | رايدا</title>
+
+  <style>
+    :root {
+      --blue: #12345b;
+      --gold: #c9a44c;
+      --light: #f4f7fb;
+      --text: #263445;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Tahoma, Arial, sans-serif;
+      color: var(--text);
+      background: #fff;
+      line-height: 2;
+    }
+
+    header {
+      background: var(--blue);
+      color: white;
+      padding: 18px 7%;
+    }
+
+    .brand-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .brand-logo {
+      width: 76px;
+      height: 76px;
+      object-fit: contain;
+      flex-shrink: 0;
+      background: white;
+      border-radius: 8px;
+      padding: 4px;
+    }
+
+    .brand {
+      font-size: 25px;
+      font-weight: bold;
+      line-height: 1.6;
+      direction: ltr;
+      text-align: right;
+    }
+
+    .brand span { color: var(--gold); }
+
+    .brand-subtitle {
+      font-size: 13px;
+      color: #e1e8f1;
+      direction: ltr;
+      text-align: right;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover { color: var(--gold); }
+
+    .languages {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 14px;
+      font-size: 13px;
+    }
+
+    .languages a {
+      color: #f0d58d;
+      text-decoration: none;
+    }
+
+    .hero {
+      padding: 65px 8%;
+      text-align: center;
+      background: linear-gradient(135deg, #edf3fa, #fffaf0);
+    }
+
+    .hero h1 {
+      color: var(--blue);
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.7;
+      margin: 0 0 15px;
+    }
+
+    .hero .slogan {
+      color: #8b6c24;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .hero p {
+      max-width: 820px;
+      margin: 20px auto;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 12px 5px 0;
+      padding: 9px 22px;
+      background: var(--blue);
+      color: white;
+      border-radius: 7px;
+      text-decoration: none;
+    }
+
+    .button:hover { background: #204b79; }
+
+    section { padding: 45px 8%; }
+
+    section:nth-of-type(even) { background: var(--light); }
+
+    h2 {
+      color: var(--blue);
+      font-size: 26px;
+      margin-top: 0;
+    }
+
+    .intro {
+      max-width: 920px;
+      margin: auto;
+    }
+
+    .topics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .topic {
+      padding: 20px;
+      background: white;
+      border: 1px solid #e1e7ef;
+      border-top: 4px solid var(--gold);
+      border-radius: 10px;
+    }
+
+    .topic h3 { color: var(--blue); }
+
+    .topic p { font-size: 15px; }
+
+    .note {
+      padding: 16px 20px;
+      background: #fffaf0;
+      border-right: 4px solid var(--gold);
+      border-radius: 5px;
+    }
+
+    footer {
+      background: #0b223e;
+      color: #e8edf4;
+      padding: 24px 8%;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #f0d58d;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 16px 5%; }
+
+      .brand-logo {
+        width: 60px;
+        height: 60px;
+      }
+
+      .brand { font-size: 21px; }
+
+      .brand-subtitle { font-size: 11px; }
+
+      nav { gap: 10px; }
+
+      .hero { padding: 42px 6%; }
+
+      section { padding: 34px 6%; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand-row">
+    <img class="brand-logo" src="logo%20raida.png" alt="شعار مركز رايدا">
+    <div>
+      <div class="brand">RAIDA <span>Think Tank</span></div>
+      <div class="brand-subtitle">International Virtual Think Tank</div>
+    </div>
+  </div>
+
+  <div class="languages">
+    <a href="seminary-university-dialogue.html">الفارسية</a>
+    <a href="seminary-university-dialogue-en.html">English</a>
+    <a href="seminary-university-dialogue-ar.html">العربية</a>
+  </div>
+
+  <nav>
+    <a href="ar.html">الرئيسية</a>
+    <a href="#about">التعريف بالمجموعة</a>
+    <a href="#mission">الرسالة والأهداف</a>
+    <a href="#topics">المحاور البحثية</a>
+    <a href="#projects">المشروعات العلمية</a>
+    <a href="#publications">المنشورات</a>
+    <a href="#cooperation">التعاون العلمي</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <h1>المجموعة العلمية للحوار الدولي بين الحوزة العلمية والجامعة</h1>
+    <div class="slogan">تفكير علمي مشترك لفهم القضايا وبناء حلول مشتركة</div>
+    <p>
+      مساحة لتطوير التفاعل العلمي بين الحوزات العلمية والجامعات والباحثين
+      والمؤسسات العلمية في إيران والعالم، مع التركيز على الحوار المنهجي،
+      والتعاون متعدد التخصصات، والتعارف المتبادل.
+    </p>
+    <a class="button" href="#topics">التعرّف على المحاور البحثية</a>
+    <a class="button" href="ar.html">العودة إلى الصفحة الرئيسية</a>
+  </div>
+
+  <section id="about">
+    <div class="intro">
+      <h2>التعريف بالمجموعة</h2>
+      <p>
+        تُعد المجموعة العلمية للحوار الدولي بين الحوزة العلمية والجامعة
+        إحدى المجالات العلمية الخمسة في مركز رايدا الدولي الافتراضي للدراسات
+        الفكرية. وتسعى إلى توفير إطار لتبادل وجهات النظر، وتطوير التعاون
+        العلمي، ودراسة القضايا المشتركة من زوايا معرفية وتخصصية متنوعة.
+      </p>
+      <p>
+        ويُنظر إلى الحوار في هذا الإطار بوصفه عملية منهجية تهدف إلى توضيح
+        وجهات النظر، وطرح الأسئلة المشتركة، وتقويم الحجج، واكتشاف فرص
+        التعاون العلمي.
+      </p>
+    </div>
+  </section>
+
+  <section id="mission">
+    <div class="intro">
+      <h2>الرسالة والأهداف</h2>
+      <p>
+        تتمثل رسالة المجموعة في تيسير التواصل المستدام بين الباحثين
+        في الحوزات العلمية والجامعات، وتعزيز قدرات التعاون العلمي على
+        المستويين الوطني والدولي.
+      </p>
+      <ul>
+        <li>تحديد القضايا المشتركة بين الدراسات الحوزوية والجامعية.</li>
+        <li>تطوير الحوار العلمي القائم على الاستدلال والأدلة والاحترام المتبادل.</li>
+        <li>دعم البحوث متعددة التخصصات والدراسات المقارنة.</li>
+        <li>تهيئة فرص التعاون بين الأساتذة والمؤسسات العلمية.</li>
+        <li>تيسير تحويل المعرفة إلى مقترحات بحثية وسياساتية قابلة للتقييم.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="topics">
+    <h2>المحاور البحثية</h2>
+    <p>يمكن تنظيم الأنشطة العلمية للمجموعة ضمن المحاور التالية:</p>
+
+    <div class="topics">
+      <article class="topic">
+        <h3>١. أسس الحوار ومنهجياته</h3>
+        <p>
+          دراسة الأسس المعرفية ومناهج الحوار العلمي،
+          وتحليل الحجج، وأساليب تقويم وجهات النظر.
+        </p>
+      </article>
+
+      <article class="topic">
+        <h3>٢. الدراسات متعددة التخصصات</h3>
+        <p>
+          دراسة القضايا المشتركة بين العلوم الإنسانية والاجتماعية،
+          والدراسات الدينية، والتخصصات الجامعية المختلفة.
+        </p>
+      </article>
+
+      <article class="topic">
+        <h3>٣. التعاون العلمي الدولي</h3>
+        <p>
+          تحديد مجالات التفاعل بين الجامعات ومراكز البحوث
+          والحوزات العلمية والشبكات العلمية العابرة للحدود.
+        </p>
+      </article>
+
+      <article class="topic">
+        <h3>٤. الدين والعلم والمجتمع</h3>
+        <p>
+          دراسة الأسئلة والقضايا المشتركة المتعلقة بالدين،
+          والمعرفة التخصصية، والتحولات الاجتماعية، والاحتياجات المعاصرة.
+        </p>
+      </article>
+
+      <article class="topic">
+        <h3>٥. بناء شبكات الباحثين</h3>
+        <p>
+          تطوير فرص تبادل الخبرات، وتنظيم الندوات التخصصية،
+          وتشكيل مجموعات دراسية، وتنفيذ المشروعات البحثية المشتركة.
+        </p>
+      </article>
+
+      <article class="topic">
+        <h3>٦. تقييم المخرجات العلمية ونقلها</h3>
+        <p>
+          دراسة أساليب تقييم جودة التعاون العلمي وتحويل
+          النتائج البحثية إلى مقترحات عملية قابلة للتطبيق.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="intro">
+      <h2>البرامج والمشروعات العلمية</h2>
+      <p>
+        خُصص هذا القسم للتعريف باللقاءات المشتركة، والموائد المستديرة
+        العلمية، وورش المنهجية البحثية، والمشروعات البحثية، وأشكال التعاون
+        بين المؤسسات التي تنفذها المجموعة.
+      </p>
+      <p class="note">
+        ستُدرج معلومات المشروعات والبرامج التنفيذية في هذا القسم
+        بعد إقرارها والتحقق من تفاصيلها.
+      </p>
+    </div>
+  </section>
+
+  <section id="publications">
+    <div class="intro">
+      <h2>البحوث والمنشورات</h2>
+      <p>
+        ستُعرَض المقالات والتقارير البحثية ومجموعات الندوات
+        والدراسات التحليلية وغيرها من المنتجات العلمية ذات الصلة
+        بعد مراجعتها واعتمادها علمياً.
+      </p>
+    </div>
+  </section>
+
+  <section id="cooperation">
+    <div class="intro">
+      <h2>التعاون العلمي</h2>
+      <p>
+        تدعو المجموعة الأساتذة والباحثين والجامعات والحوزات العلمية
+        ومراكز البحوث المهتمة بالحوار والتعاون العلمي إلى المشاركة
+        في تطوير أنشطتها على المستويين الوطني والدولي.
+      </p>
+      <p>
+        سيُعلن عن معلومات الاتصال وآلية إرسال مقترحات التعاون
+        بعد تحديد قناة التواصل الرسمية لمركز رايدا.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>المجموعة العلمية للحوار الدولي بين الحوزة العلمية والجامعة</p>
+  <p>مركز رايدا الدولي الافتراضي للدراسات الفكرية | RAIDA International Virtual Think Tank</p>
+  <p>ربط العالم بالحوار والمعرفة المتاحة</p>
+  <p><a href="ar.html">العودة إلى الصفحة الرئيسية لمركز رايدا</a></p>
+  <p>ستُنشر المعلومات الرسمية عن المشروعات والمنشورات بعد اعتمادها علمياً.</p>
+</footer>
+
+</body>
+</html>
