@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="گروه علمی تبلیغ دینی و ارتباطات تمدنی اندیشکده مجازی بین‌المللی رایدا.">
   <title>تبلیغ دینی و ارتباطات تمدنی | اندیشکده رایدا</title>
+
   <style>
     :root {
       --blue: #12345b;
@@ -15,6 +16,8 @@
     }
 
     * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -30,12 +33,36 @@
       padding: 18px 7%;
     }
 
+    .brand-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .brand-logo {
+      width: 76px;
+      height: 76px;
+      object-fit: contain;
+      flex-shrink: 0;
+      background: white;
+      border-radius: 8px;
+      padding: 4px;
+    }
+
     .brand {
       font-size: 25px;
       font-weight: bold;
+      line-height: 1.6;
     }
 
     .brand span { color: var(--gold); }
+
+    .brand-subtitle {
+      font-size: 13px;
+      color: #e1e8f1;
+      direction: ltr;
+      text-align: right;
+    }
 
     nav {
       display: flex;
@@ -144,23 +171,45 @@
 
     @media (max-width: 600px) {
       header { padding: 16px 5%; }
+
+      .brand-logo {
+        width: 60px;
+        height: 60px;
+      }
+
+      .brand { font-size: 21px; }
+
+      .brand-subtitle { font-size: 11px; }
+
       nav { gap: 10px; }
+
       .hero { padding: 42px 6%; }
+
       section { padding: 34px 6%; }
     }
   </style>
 </head>
+
 <body>
 
 <header>
-  <div class="brand">RAIDA <span>Think Tank</span></div>
+  <div class="brand-row">
+    <img class="brand-logo" src="logo%20raida.png" alt="لوگوی اندیشکده رایدا">
+    <div>
+      <div class="brand">RAIDA <span>Think Tank</span></div>
+      <div class="brand-subtitle">International Virtual Think Tank</div>
+    </div>
+  </div>
+
   <nav>
     <a href="index.html">صفحه اصلی رایدا</a>
     <a href="#about">معرفی گروه</a>
     <a href="#mission">مأموریت</a>
     <a href="#topics">محورهای پژوهشی</a>
+    <a href="#projects">طرح‌های پژوهشی</a>
+    <a href="#publications">انتشارات</a>
     <a href="#cooperation">همکاری علمی</a>
-    <a href="en.html">English</a>
+    <a href="religious-communication-en.html">English</a>
   </nav>
 </header>
 
@@ -168,10 +217,12 @@
   <div class="hero">
     <h1>گروه علمی تبلیغ دینی و ارتباطات تمدنی</h1>
     <div class="slogan">گفت‌وگو، شناخت متقابل و ارتباط مؤثر میان فرهنگ‌ها</div>
+
     <p>
       بستری برای مطالعه علمی روش‌های تبلیغ دینی، ارتباطات بین‌فرهنگی،
       گفت‌وگوی ادیان و نقش ارتباطات در تعاملات تمدنی جهان معاصر.
     </p>
+
     <a class="button" href="#topics">آشنایی با محورهای پژوهشی</a>
     <a class="button" href="index.html">بازگشت به صفحه اصلی</a>
   </div>
@@ -308,7 +359,8 @@
 </main>
 
 <footer>
-  <p>گروه علمی تبلیغ دینی و ارتباطات تمدنی | RAIDA Think Tank</p>
+  <p>گروه علمی تبلیغ دینی و ارتباطات تمدنی</p>
+  <p>اندیشکده مجازی بین‌المللی رایدا | RAIDA International Virtual Think Tank</p>
   <p>واسطه جهان در گفت‌وگو با کمک دانش در دسترس</p>
   <p><a href="index.html">بازگشت به صفحه اصلی اندیشکده رایدا</a></p>
   <p>اطلاعات رسمی طرح‌ها و انتشارات پس از تأیید علمی منتشر خواهد شد.</p>
@@ -316,4 +368,3 @@
 
 </body>
 </html>
-```
