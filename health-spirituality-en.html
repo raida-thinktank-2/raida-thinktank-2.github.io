@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Health and Spirituality research group at RAIDA International Virtual Think Tank.">
   <title>Health and Spirituality | RAIDA</title>
+
   <style>
     :root {
-      --navy: #12345a;
+      --navy: #12345b;
       --blue: #1c527d;
-      --gold: #c9a34a;
+      --gold: #c9a44c;
       --light: #f4f7fb;
       --text: #243447;
       --white: #ffffff;
@@ -28,21 +29,60 @@
       background: var(--light);
     }
 
-    header {
-      background: linear-gradient(135deg, var(--navy), var(--blue));
-      color: var(--white);
-      text-align: center;
-      padding: 42px 20px;
-      border-bottom: 5px solid var(--gold);
+    .site-header {
+      background: var(--white);
+      border-bottom: 4px solid var(--gold);
+      padding: 18px 24px;
     }
 
-    header h1 {
-      margin: 0 0 12px;
-      font-size: clamp(1.8rem, 4vw, 2.6rem);
+    .brand {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      text-align: left;
+    }
+
+    .brand-logo {
+      width: 76px;
+      height: 76px;
+      object-fit: contain;
+      border-radius: 10px;
+      flex-shrink: 0;
+      background: var(--white);
+    }
+
+    .brand h1 {
+      margin: 0;
+      color: var(--navy);
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
       line-height: 1.3;
     }
 
-    header p {
+    .brand p {
+      margin: 5px 0 0;
+      color: var(--blue);
+      font-size: 0.98rem;
+    }
+
+    .page-heading {
+      background: linear-gradient(135deg, var(--navy), var(--blue));
+      color: var(--white);
+      text-align: center;
+      padding: 38px 20px;
+      border-bottom: 5px solid var(--gold);
+    }
+
+    .page-heading h2 {
+      margin: 0 0 12px;
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      line-height: 1.35;
+      color: var(--white);
+    }
+
+    .page-heading p {
       max-width: 800px;
       margin: 0 auto;
       font-size: 1.05rem;
@@ -82,7 +122,7 @@
       box-shadow: 0 4px 15px rgba(18, 52, 90, 0.06);
     }
 
-    h2 {
+    section h2 {
       margin-top: 0;
       color: var(--navy);
       font-size: 1.45rem;
@@ -117,8 +157,25 @@
     }
 
     @media (max-width: 600px) {
-      header {
-        padding: 32px 16px;
+      .site-header {
+        padding: 14px 12px;
+      }
+
+      .brand {
+        gap: 12px;
+      }
+
+      .brand-logo {
+        width: 60px;
+        height: 60px;
+      }
+
+      .brand p {
+        font-size: 0.85rem;
+      }
+
+      .page-heading {
+        padding: 30px 16px;
       }
 
       main {
@@ -131,15 +188,26 @@
     }
   </style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Health and Spirituality</h1>
+  <header class="site-header">
+    <div class="brand">
+      <img class="brand-logo" src="logo%20raida.png" alt="RAIDA Think Tank logo">
+      <div>
+        <h1>RAIDA Think Tank</h1>
+        <p>International Virtual Think Tank</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-heading">
+    <h2>Health and Spirituality</h2>
     <p>
       Exploring the relationship between spiritual wellbeing, human dignity,
       holistic health, and compassionate care.
     </p>
-  </header>
+  </div>
 
   <nav>
     <a href="en.html">RAIDA Home</a>
@@ -229,7 +297,7 @@
 
   <footer>
     <p><strong>RAIDA International Virtual Think Tank</strong></p>
-    <p>Mediating the world in conversation through accessible knowledge.</p>
+    <p>Connecting the World Through Dialogue and Accessible Knowledge.</p>
     <p><a href="en.html">Return to the English Homepage</a></p>
   </footer>
 
