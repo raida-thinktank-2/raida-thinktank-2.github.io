@@ -1,0 +1,472 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="رایدا، المركز الافتراضي الدولي للحوار وإنتاج المعرفة وتبادلها وتوظيفها في معالجة قضايا العالم.">
+  <meta name="theme-color" content="#12345b">
+  <title>رایدا | المركز الافتراضي الدولي للفكر والبحث</title>
+
+  <style>
+    :root {
+      --navy: #12345b;
+      --blue: #1c527d;
+      --gold: #c9a44c;
+      --light: #f4f7fb;
+      --text: #243447;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Tahoma, Arial, sans-serif;
+      line-height: 1.95;
+      color: var(--text);
+      background: var(--light);
+    }
+
+    a {
+      transition: color 0.2s ease;
+    }
+
+    .brand-header {
+      background: var(--white);
+      padding: 16px 24px;
+      border-bottom: 1px solid #e1e7ef;
+    }
+
+    .brand-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .brand-logo {
+      width: 76px;
+      height: 76px;
+      object-fit: contain;
+      border-radius: 10px;
+      background: var(--white);
+      flex-shrink: 0;
+    }
+
+    .brand-name {
+      margin: 0;
+      color: var(--navy);
+      font-size: 1.65rem;
+      line-height: 1.5;
+    }
+
+    .brand-subtitle {
+      margin: 2px 0 0;
+      color: #64748b;
+      font-size: 0.92rem;
+    }
+
+    .language-nav {
+      background: var(--white);
+      text-align: center;
+      padding: 11px 15px;
+      border-bottom: 1px solid #e1e7ef;
+    }
+
+    .language-nav a {
+      display: inline-block;
+      margin: 4px 12px;
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .language-nav a:hover,
+    nav a:hover {
+      color: #9a741d;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--navy), var(--blue));
+      color: var(--white);
+      text-align: center;
+      padding: 58px 22px;
+      border-bottom: 5px solid var(--gold);
+    }
+
+    .hero-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      margin: 0 0 18px;
+      font-size: clamp(1.8rem, 4vw, 2.65rem);
+      line-height: 1.6;
+    }
+
+    .hero p {
+      margin: 0 auto 15px;
+      font-size: 1.08rem;
+      max-width: 800px;
+    }
+
+    .hero .slogan {
+      color: #f1d58b;
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-top: 20px;
+    }
+
+    nav {
+      background: var(--white);
+      padding: 14px 18px;
+      text-align: center;
+      border-bottom: 1px solid #e1e7ef;
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 5px 10px;
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 1050px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: var(--white);
+      margin-bottom: 22px;
+      padding: 26px;
+      border-radius: 12px;
+      border-right: 4px solid var(--gold);
+      box-shadow: 0 4px 15px rgba(18, 52, 90, 0.06);
+      scroll-margin-top: 20px;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 14px;
+      color: var(--navy);
+      font-size: 1.45rem;
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    ul {
+      padding-right: 24px;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .groups-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 15px;
+    }
+
+    .group-card {
+      display: block;
+      padding: 18px;
+      background: #f7f9fc;
+      border: 1px solid #e1e7ef;
+      border-right: 3px solid var(--blue);
+      border-radius: 9px;
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .group-card:hover {
+      background: #edf3f9;
+      border-right-color: var(--gold);
+    }
+
+    .group-card span {
+      display: block;
+      margin-top: 5px;
+      color: #64748b;
+      font-size: 0.9rem;
+      font-weight: normal;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px;
+    }
+
+    .service-item {
+      padding: 11px 14px;
+      background: #edf3f9;
+      border-radius: 7px;
+    }
+
+    .contact-note {
+      background: #edf3f9;
+      border-right: 4px solid var(--blue);
+      padding: 18px;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: 35px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    footer .slogan {
+      color: #f1d58b;
+    }
+
+    footer a {
+      color: #f1d58b;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .brand-header {
+        padding: 13px 15px;
+      }
+
+      .brand-inner {
+        gap: 12px;
+      }
+
+      .brand-logo {
+        width: 60px;
+        height: 60px;
+      }
+
+      .brand-name {
+        font-size: 1.25rem;
+      }
+
+      .brand-subtitle {
+        font-size: 0.8rem;
+      }
+
+      .hero {
+        padding: 38px 16px;
+      }
+
+      main {
+        padding: 0 12px;
+      }
+
+      section {
+        padding: 19px;
+      }
+
+      nav a,
+      .language-nav a {
+        margin: 5px 7px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="brand-header">
+    <div class="brand-inner">
+      <img class="brand-logo"
+           src="logo%20raida.png"
+           alt="شعار رایدا">
+      <div>
+        <p class="brand-name"><strong>RAIDA Think Tank</strong></p>
+        <p class="brand-subtitle">المركز الافتراضي الدولي للفكر والبحث</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="language-nav" aria-label="اختيار اللغة">
+    <a href="index.html" lang="fa">فارسی</a>
+    <a href="en.html" lang="en">English</a>
+    <a href="ar.html" lang="ar" aria-current="page">العربية</a>
+  </div>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>رایدا — المركز الافتراضي الدولي للفكر والبحث</h1>
+      <p>
+        منصة علمية دولية افتراضية لإنتاج المعرفة وتبادلها
+        وتوظيفها في دراسة القضايا المعاصرة واستشراف المستقبل.
+      </p>
+      <p class="slogan">
+        ربط العالم بالحوار والمعرفة المتاحة
+      </p>
+    </div>
+  </header>
+
+  <nav aria-label="التنقل في الموقع">
+    <a href="#about">من نحن</a>
+    <a href="#mission">الرسالة والمنهج</a>
+    <a href="#groups">المجموعات البحثية</a>
+    <a href="#services">الخدمات العلمية</a>
+    <a href="#research">البحوث والمنشورات</a>
+    <a href="#cooperation">التعاون العلمي</a>
+  </nav>
+
+  <main>
+
+    <section id="about">
+      <h2>من نحن</h2>
+      <p>
+        رایدا منصة فكرية وبحثية افتراضية ذات توجه دولي، تهدف إلى
+        بناء فضاء للتواصل العلمي بين الباحثين وأعضاء هيئة التدريس
+        والجامعات والمراكز البحثية والمؤسسات المعرفية.
+      </p>
+      <p>
+        وتسعى المنصة إلى تعزيز إنتاج المعرفة وتبادل الخبرات
+        والاستفادة من نتائج البحوث في دراسة القضايا الوطنية
+        والإقليمية والدولية، مع الاهتمام بقضايا العالم الإسلامي
+        والتحديات المشتركة التي تواجه المجتمعات.
+      </p>
+    </section>
+
+    <section id="mission">
+      <h2>الرسالة والمنهج</h2>
+      <p>
+        تتمثل رسالة رایدا في الإسهام في فهم القضايا المعقدة
+        وتحليلها بصورة منهجية، وتطوير رؤى ونماذج واستراتيجيات
+        تستند إلى البحث العلمي والحوار المعرفي والتفكير المستقبلي.
+      </p>
+      <p>وتعتمد رایدا في عملها على المبادئ الآتية:</p>
+      <ul>
+        <li>الاستناد إلى البحث العلمي والتحليل المنهجي.</li>
+        <li>تشجيع الحوار بين التخصصات والمدارس الفكرية.</li>
+        <li>ربط المعرفة النظرية بالتحديات والاحتياجات الواقعية.</li>
+        <li>تعزيز التعاون بين الباحثين والمؤسسات العلمية.</li>
+        <li>الاهتمام بالدراسات المقارنة واستشراف المستقبل.</li>
+        <li>تطوير حلول وأطر عمل قابلة للدراسة والتقييم والتطبيق.</li>
+      </ul>
+    </section>
+
+    <section id="groups">
+      <h2>المجموعات البحثية</h2>
+      <p>
+        تنظم رایدا أنشطتها البحثية من خلال مجموعات علمية متخصصة
+        تعمل على دراسة موضوعات محددة، وتطوير البحوث والمبادرات
+        والتعاون مع الخبراء والمؤسسات ذات الصلة.
+      </p>
+
+      <div class="groups-grid">
+        <a class="group-card" href="women-futures-ar.html">
+          دراسات المرأة واستشراف مستقبلها
+          <span>قضايا المرأة والتحولات الاجتماعية والمستقبلية</span>
+        </a>
+
+        <a class="group-card" href="religious-communication-ar.html">
+          التبليغ الديني والاتصالات الحضارية
+          <span>التواصل الديني والحوار بين الثقافات والحضارات</span>
+        </a>
+
+        <a class="group-card" href="seminary-university-dialogue-ar.html">
+          الحوار الدولي بين الحوزة والجامعة
+          <span>التعاون العلمي والحوار بين المؤسسات الأكاديمية والدينية</span>
+        </a>
+
+        <a class="group-card" href="health-spirituality-ar.html">
+          الصحة والروحانية
+          <span>دراسة أبعاد الصحة الروحية والمعنوية</span>
+        </a>
+
+        <a class="group-card" href="health-systems-ar.html">
+          النظم الصحية
+          <span>السياسات الصحية والحوكمة وجودة الخدمات</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>الخدمات العلمية والبحثية</h2>
+      <p>
+        تعمل رایدا على تطوير خدمات معرفية وبحثية وفق طبيعة
+        القضايا المطروحة واحتياجات الجهات المستفيدة، ومن أبرزها:
+      </p>
+
+      <div class="services-grid">
+        <div class="service-item">الدراسة والتحليل</div>
+        <div class="service-item">الدراسات المقارنة</div>
+        <div class="service-item">تصميم النماذج والأطر</div>
+        <div class="service-item">استشراف المستقبل</div>
+        <div class="service-item">تصميم الآليات والإجراءات</div>
+        <div class="service-item">صياغة الاستراتيجيات</div>
+        <div class="service-item">تصميم الأنظمة والمنصات</div>
+        <div class="service-item">صياغة العقائد والأطر التوجيهية</div>
+        <div class="service-item">إعداد خرائط الطريق</div>
+        <div class="service-item">تشخيص المشكلات وتحليلها</div>
+        <div class="service-item">تصميم المؤشرات</div>
+        <div class="service-item">رسم الخرائط المعرفية</div>
+        <div class="service-item">التقييم وقياس الأداء</div>
+      </div>
+    </section>
+
+    <section id="research">
+      <h2>البحوث والمنشورات</h2>
+      <p>
+        تهتم رایدا بتطوير المعرفة من خلال الدراسات العلمية
+        والتقارير البحثية والأوراق السياساتية والدراسات المقارنة
+        والمبادرات المعرفية المشتركة.
+      </p>
+      <p>
+        وسيتم عرض البحوث والمنشورات والمخرجات العلمية على هذه
+        المنصة وفق مراحل إنجازها واعتمادها وإتاحتها للنشر.
+      </p>
+    </section>
+
+    <section id="cooperation">
+      <h2>التعاون العلمي والشراكات الدولية</h2>
+      <p>
+        ترحب رایدا بالتواصل مع الباحثين وأعضاء هيئة التدريس
+        والجامعات والمراكز البحثية والمؤسسات المعنية، لاستكشاف
+        فرص التعاون في إعداد الدراسات وتنظيم الحوارات العلمية
+        وتبادل الخبرات وتطوير المبادرات المشتركة.
+      </p>
+      <p class="contact-note">
+        يمكن أن يشمل التعاون المقترح البحوث المشتركة، والندوات
+        العلمية، والدراسات المقارنة، وتبادل المعرفة، وتطوير
+        المشاريع البحثية متعددة التخصصات.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><strong>RAIDA Think Tank</strong></p>
+    <p>المركز الافتراضي الدولي للفكر والبحث</p>
+    <p class="slogan">ربط العالم بالحوار والمعرفة المتاحة</p>
+    <p>
+      <a href="index.html">الصفحة الرئيسية بالفارسية</a>
+      |
+      <a href="en.html">الصفحة الرئيسية بالإنجليزية</a>
+    </p>
+  </footer>
+
+</body>
+</html>
