@@ -154,6 +154,11 @@
     footer a {
       color: #f1d58b;
       text-decoration: none;
+      margin: 0 6px;
+    }
+
+    .language-links {
+      margin-top: 12px;
     }
 
     @media (max-width: 600px) {
@@ -209,9 +214,11 @@
     </p>
   </div>
 
-  <nav>
+  <nav aria-label="Language and main navigation">
     <a href="en.html">RAIDA Home</a>
-    <a href="health-spirituality.html">صفحه فارسی</a>
+    <a href="health-spirituality-en.html" lang="en">English</a>
+    <a href="health-spirituality.html" lang="fa" dir="rtl">فارسی</a>
+    <a href="health-spirituality-ar.html" lang="ar" dir="rtl">العربية</a>
   </nav>
 
   <main>
@@ -298,7 +305,16 @@
   <footer>
     <p><strong>RAIDA International Virtual Think Tank</strong></p>
     <p>Connecting the World Through Dialogue and Accessible Knowledge.</p>
-    <p><a href="en.html">Return to the English Homepage</a></p>
+    <p>
+      <a href="index.html" lang="fa" dir="rtl">صفحه اصلی فارسی</a> |
+      <a href="en.html">English Homepage</a> |
+      <a href="ar.html" lang="ar" dir="rtl">الصفحة الرئيسية العربية</a>
+    </p>
+    <p class="language-links">
+      <a href="health-spirituality-en.html" lang="en">English</a> |
+      <a href="health-spirituality.html" lang="fa" dir="rtl">فارسی</a> |
+      <a href="health-spirituality-ar.html" lang="ar" dir="rtl">العربية</a>
+    </p>
   </footer>
 
 </body>
