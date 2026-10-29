@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
@@ -27,21 +27,44 @@
     header {
       background: var(--blue);
       color: white;
-      padding: 20px 7%;
+      padding: 18px 7%;
+    }
+
+    .brand-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .brand-logo {
+      width: 76px;
+      height: 76px;
+      object-fit: contain;
+      background: white;
+      border-radius: 12px;
+      padding: 5px;
+      flex-shrink: 0;
     }
 
     .brand {
       font-size: 25px;
       font-weight: bold;
+      line-height: 1.6;
     }
 
     .brand span { color: var(--gold); }
+
+    .brand-subtitle {
+      font-size: 13px;
+      color: #e8edf4;
+      line-height: 1.8;
+    }
 
     nav {
       display: flex;
       flex-wrap: wrap;
       gap: 18px;
-      margin-top: 12px;
+      margin-top: 14px;
     }
 
     nav a {
@@ -85,6 +108,8 @@
       border-radius: 7px;
       text-decoration: none;
     }
+
+    .button:hover { background: #1b4b7e; }
 
     section { padding: 45px 8%; }
 
@@ -139,6 +164,12 @@
 
     @media (max-width: 600px) {
       header { padding: 16px 5%; }
+      .brand-logo {
+        width: 60px;
+        height: 60px;
+      }
+      .brand { font-size: 21px; }
+      .brand-subtitle { font-size: 11px; }
       nav { gap: 10px; }
       .hero { padding: 45px 6%; }
       section { padding: 35px 6%; }
@@ -148,13 +179,22 @@
 <body>
 
 <header>
-  <div class="brand">RAIDA <span>Think Tank</span></div>
+  <div class="brand-row">
+    <img class="brand-logo" src="logo%20raida.png" alt="لوگوی اندیشکده رایدا">
+    <div>
+      <div class="brand">RAIDA <span>Think Tank</span></div>
+      <div class="brand-subtitle">اندیشکده مجازی بین‌المللی رایدا | International Virtual Think Tank</div>
+    </div>
+  </div>
+
   <nav>
-    <a href="https://raida-thinktank-2.github.io/">صفحه اصلی رایدا</a>
+    <a href="index.html">صفحه اصلی رایدا</a>
     <a href="#about">معرفی گروه</a>
     <a href="#mission">مأموریت</a>
     <a href="#topics">محورهای پژوهشی</a>
+    <a href="#activities">فعالیت‌های علمی</a>
     <a href="#cooperation">همکاری علمی</a>
+    <a href="health-systems-en.html">English</a>
   </nav>
 </header>
 
@@ -289,7 +329,7 @@
   </section>
 
   <div class="back">
-    <a class="button" href="https://raida-thinktank-2.github.io/">بازگشت به صفحه اصلی رایدا</a>
+    <a class="button" href="index.html">بازگشت به صفحه اصلی رایدا</a>
   </div>
 </main>
 
@@ -301,4 +341,3 @@
 
 </body>
 </html>
-```
