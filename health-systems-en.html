@@ -1,16 +1,17 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Health Systems research group at RAIDA International Virtual Think Tank.">
-  <title>Health Systems | RAIDA</title>
+  <title>Health Systems | RAIDA Think Tank</title>
+
   <style>
     :root {
-      --navy: #12345a;
+      --navy: #12345b;
       --blue: #1c527d;
-      --gold: #c9a34a;
+      --gold: #c9a44c;
       --light: #f4f7fb;
       --text: #243447;
       --white: #ffffff;
@@ -28,21 +29,57 @@
       background: var(--light);
     }
 
-    header {
+    .brand-header {
+      background: var(--white);
+      padding: 18px 24px;
+      border-bottom: 1px solid #e1e7ef;
+    }
+
+    .brand-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .brand-logo {
+      width: 76px;
+      height: 76px;
+      object-fit: contain;
+      border-radius: 10px;
+      background: var(--white);
+      flex-shrink: 0;
+    }
+
+    .brand-name {
+      margin: 0;
+      color: var(--navy);
+      font-size: 1.65rem;
+      line-height: 1.3;
+    }
+
+    .brand-subtitle {
+      margin: 5px 0 0;
+      color: #64748b;
+      font-size: 0.95rem;
+    }
+
+    .page-heading {
       background: linear-gradient(135deg, var(--navy), var(--blue));
       color: var(--white);
       text-align: center;
-      padding: 42px 20px;
+      padding: 38px 20px;
       border-bottom: 5px solid var(--gold);
     }
 
-    header h1 {
+    .page-heading h1 {
       margin: 0 0 12px;
       font-size: clamp(1.8rem, 4vw, 2.6rem);
       line-height: 1.3;
     }
 
-    header p {
+    .page-heading p {
       max-width: 800px;
       margin: 0 auto;
       font-size: 1.05rem;
@@ -117,7 +154,28 @@
     }
 
     @media (max-width: 600px) {
-      header {
+      .brand-header {
+        padding: 14px 16px;
+      }
+
+      .brand-inner {
+        gap: 12px;
+      }
+
+      .brand-logo {
+        width: 60px;
+        height: 60px;
+      }
+
+      .brand-name {
+        font-size: 1.25rem;
+      }
+
+      .brand-subtitle {
+        font-size: 0.82rem;
+      }
+
+      .page-heading {
         padding: 32px 16px;
       }
 
@@ -131,9 +189,20 @@
     }
   </style>
 </head>
+
 <body>
 
-  <header>
+  <div class="brand-header">
+    <div class="brand-inner">
+      <img class="brand-logo" src="logo%20raida.png" alt="RAIDA Think Tank logo">
+      <div>
+        <p class="brand-name"><strong>RAIDA Think Tank</strong></p>
+        <p class="brand-subtitle">International Virtual Think Tank</p>
+      </div>
+    </div>
+  </div>
+
+  <header class="page-heading">
     <h1>Health Systems</h1>
     <p>
       Exploring health policy, system governance, equitable access,
@@ -230,10 +299,9 @@
 
   <footer>
     <p><strong>RAIDA International Virtual Think Tank</strong></p>
-    <p>Mediating the world in conversation through accessible knowledge.</p>
+    <p>Connecting the World Through Dialogue and Accessible Knowledge.</p>
     <p><a href="en.html">Return to the English Homepage</a></p>
   </footer>
 
 </body>
 </html>
-```
