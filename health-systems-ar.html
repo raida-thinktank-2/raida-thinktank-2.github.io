@@ -1,0 +1,369 @@
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="المجموعة العلمية لنظام الصحة في مركز رايدا الفكري الافتراضي الدولي؛ البحث في السياسات الصحية والحوكمة والعدالة ومستقبل النظم الصحية.">
+  <title>نظام الصحة | مركز رايدا الفكري</title>
+  <style>
+    :root {
+      --blue: #12345b;
+      --gold: #c9a44c;
+      --light: #f4f7fb;
+      --text: #263445;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Tahoma, Arial, sans-serif;
+      color: var(--text);
+      background: #fff;
+      line-height: 2;
+    }
+
+    header {
+      background: var(--blue);
+      color: white;
+      padding: 18px 7%;
+    }
+
+    .brand-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .brand-logo {
+      width: 76px;
+      height: 76px;
+      object-fit: contain;
+      background: white;
+      border-radius: 12px;
+      padding: 5px;
+      flex-shrink: 0;
+    }
+
+    .brand {
+      font-size: 25px;
+      font-weight: bold;
+      line-height: 1.6;
+      direction: ltr;
+      text-align: right;
+    }
+
+    .brand span { color: var(--gold); }
+
+    .brand-subtitle {
+      font-size: 13px;
+      color: #e8edf4;
+      line-height: 1.8;
+    }
+
+    .languages {
+      margin-top: 12px;
+      font-size: 13px;
+    }
+
+    .languages a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 12px;
+    }
+
+    .languages a:hover { color: var(--gold); }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 14px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover { color: var(--gold); }
+
+    .hero {
+      padding: 65px 8%;
+      text-align: center;
+      background: linear-gradient(135deg, #edf3fa, #fffaf0);
+    }
+
+    .hero h1 {
+      color: var(--blue);
+      font-size: clamp(30px, 5vw, 46px);
+      line-height: 1.6;
+      margin: 0 0 15px;
+    }
+
+    .hero .slogan {
+      color: #8b6c24;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .hero p {
+      max-width: 850px;
+      margin: 20px auto;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 10px 24px;
+      background: var(--blue);
+      color: white;
+      border-radius: 7px;
+      text-decoration: none;
+    }
+
+    .button:hover { background: #1b4b7e; }
+
+    section { padding: 45px 8%; }
+
+    section:nth-of-type(even) { background: var(--light); }
+
+    h2 {
+      color: var(--blue);
+      font-size: 26px;
+      margin-top: 0;
+    }
+
+    .intro {
+      max-width: 950px;
+      margin: auto;
+    }
+
+    .topics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .topic {
+      padding: 20px;
+      background: white;
+      border: 1px solid #e1e7ef;
+      border-top: 4px solid var(--gold);
+      border-radius: 10px;
+    }
+
+    .topic h3 {
+      color: var(--blue);
+      font-size: 18px;
+      margin-top: 0;
+    }
+
+    .topic p { font-size: 15px; }
+
+    .back {
+      text-align: center;
+      padding: 35px 8%;
+    }
+
+    footer {
+      background: #0b223e;
+      color: #e8edf4;
+      padding: 24px 8%;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 16px 5%; }
+      .brand-logo {
+        width: 60px;
+        height: 60px;
+      }
+      .brand { font-size: 21px; }
+      .brand-subtitle { font-size: 11px; }
+      nav { gap: 10px; }
+      .hero { padding: 45px 6%; }
+      section { padding: 35px 6%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="brand-row">
+    <img class="brand-logo" src="logo%20raida.png" alt="شعار مركز رايدا الفكري">
+    <div>
+      <div class="brand">RAIDA <span>Think Tank</span></div>
+      <div class="brand-subtitle">مركز رايدا الفكري الافتراضي الدولي | International Virtual Think Tank</div>
+    </div>
+  </div>
+
+  <div class="languages">
+    <a href="health-systems.html">الفارسية</a>
+    <a href="health-systems-en.html">English</a>
+    <a href="health-systems-ar.html">العربية</a>
+  </div>
+
+  <nav>
+    <a href="ar.html">الصفحة الرئيسية لرايدا</a>
+    <a href="#about">التعريف بالمجموعة</a>
+    <a href="#mission">الرسالة والمنهج</a>
+    <a href="#topics">المحاور البحثية</a>
+    <a href="#activities">الأنشطة العلمية</a>
+    <a href="#cooperation">التعاون العلمي</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <h1>المجموعة العلمية لنظام الصحة</h1>
+    <div class="slogan">من فهم قضايا الصحة إلى تصميم حلول علمية وسياساتية</div>
+    <p>
+      منصة للدراسة متعددة التخصصات لنظام الصحة، وتحليل السياسات
+      وهياكل الحوكمة، ودراسة العدالة الصحية، وتقديم مقترحات
+      قائمة على الأدلة لتحسين أداء النظم الصحية واستشراف مستقبلها.
+    </p>
+    <a class="button" href="#topics">التعرّف على المحاور البحثية</a>
+  </div>
+
+  <section id="about">
+    <div class="intro">
+      <h2>التعريف بالمجموعة</h2>
+      <p>
+        تركز المجموعة العلمية لنظام الصحة في مركز رايدا الفكري
+        الافتراضي الدولي على الدراسة المنهجية للأبعاد العلمية
+        والإدارية والاقتصادية والاجتماعية والسياساتية للصحة.
+        وتسعى المجموعة، من خلال الربط بين المعرفة الجامعية
+        والخبرات التنفيذية والتحليلات الاستشرافية، إلى توفير
+        أرضية لفهم القضايا بدقة أكبر وصياغة حلول قابلة للدراسة والتقييم.
+      </p>
+      <p>
+        وتولي المجموعة اهتماماً بالأدلة الموثوقة، والتحليل المقارن
+        لتجارب الدول، والتعرّف على أصحاب المصلحة، ودراسة آثار
+        السياسات، وتقييم مدى قابلية المقترحات للتنفيذ.
+      </p>
+    </div>
+  </section>
+
+  <section id="mission">
+    <div class="intro">
+      <h2>الرسالة والمنهج</h2>
+      <p>
+        تتمثل رسالة المجموعة في الإسهام في تحديد القضايا ذات
+        الأولوية في نظام الصحة، والتحليل العلمي للسياسات وهياكل
+        الحوكمة، وتطوير مقترحات تعزز الكفاءة والعدالة والجودة
+        والاستدامة في النظام الصحي.
+      </p>
+      <p>
+        وتستند الأنشطة المقترحة للمجموعة إلى البحث متعدد التخصصات،
+        والاستفادة من المصادر القابلة للتحقق، والحوار العلمي
+        بين المتخصصين، والتمييز الواضح بين النتائج البحثية
+        والتحليلات والمقترحات السياساتية.
+      </p>
+    </div>
+  </section>
+
+  <section id="topics">
+    <div class="intro">
+      <h2>المحاور البحثية</h2>
+      <p>تمثل المجالات التالية إطاراً مقترحاً لتنظيم الأنشطة العلمية للمجموعة.</p>
+
+      <div class="topics">
+        <article class="topic">
+          <h3>١. السياسات الصحية</h3>
+          <p>دراسة عمليات إعداد السياسات الصحية وتنفيذها وتقييمها، وتحليل آثارها على السكان ومقدمي الخدمات الصحية.</p>
+        </article>
+
+        <article class="topic">
+          <h3>٢. حوكمة النظام الصحي</h3>
+          <p>تحليل هياكل صنع القرار، وتوزيع المسؤوليات، والمساءلة، والشفافية، والتنسيق بين المؤسسات المعنية بالصحة.</p>
+        </article>
+
+        <article class="topic">
+          <h3>٣. العدالة وإمكانية الوصول إلى الخدمات</h3>
+          <p>دراسة التفاوتات الصحية، والإنصاف في الوصول إلى الخدمات، والعوائق الاقتصادية والاجتماعية، وسبل الحد من الفجوات.</p>
+        </article>
+
+        <article class="topic">
+          <h3>٤. اقتصاد الصحة وتمويلها</h3>
+          <p>دراسة التكاليف والموارد المالية والحماية المالية للأسر وشراء الخدمات وأساليب التخصيص الكفؤ للموارد المحدودة.</p>
+        </article>
+
+        <article class="topic">
+          <h3>٥. جودة الخدمات وسلامتها</h3>
+          <p>تحليل مؤشرات الجودة، وسلامة المرضى، وتجارب المستفيدين من الخدمات، والآليات الداعمة للتحسين المستمر للرعاية.</p>
+        </article>
+
+        <article class="topic">
+          <h3>٦. القوى العاملة الصحية</h3>
+          <p>دراسة التعليم والتدريب، وتوزيع القوى العاملة، والظروف المهنية، والدافعية، والاستبقاء الوظيفي، ومستقبل المهن الصحية.</p>
+        </article>
+
+        <article class="topic">
+          <h3>٧. التكنولوجيا والتحول الرقمي</h3>
+          <p>دراسة الصحة الرقمية والذكاء الاصطناعي والبيانات الصحية وفرص الابتكار والمتطلبات الأخلاقية ومتطلبات الحوكمة المرتبطة بها.</p>
+        </article>
+
+        <article class="topic">
+          <h3>٨. استشراف مستقبل النظام الصحي</h3>
+          <p>رصد الاتجاهات الناشئة ومواطن عدم اليقين وسيناريوهات المستقبل والاستراتيجيات اللازمة للاستعداد للتغيرات في النظام الصحي.</p>
+        </article>
+
+        <article class="topic">
+          <h3>٩. تقييم السياسات والتعلّم منها</h3>
+          <p>تطوير أطر التقييم ومؤشرات الأداء، وتحليل آثار السياسات، والاستفادة من النتائج في مراجعة القرارات وتحسينها.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="activities">
+    <div class="intro">
+      <h2>مجالات النشاط العلمي</h2>
+      <p>
+        تشمل مجالات النشاط المقترحة إعداد التقارير البحثية وتقارير
+        السياسات، ومراجعة الأدلة العلمية، والتحليل المقارن لتجارب
+        الدول، وتنظيم الندوات التخصصية، وإعداد أطر التقييم،
+        وتصميم مشروعات مشتركة متعددة التخصصات.
+      </p>
+      <p>
+        ولا يُعلن عن أي مشروع أو ندوة أو تقرير أو إنجاز باعتباره
+        نشاطاً منجزاً إلا بعد تنفيذه والتحقق من المعلومات المتعلقة به.
+      </p>
+    </div>
+  </section>
+
+  <section id="cooperation">
+    <div class="intro">
+      <h2>التعاون العلمي</h2>
+      <p>
+        تدعو المجموعة الأساتذة والباحثين والمديرين والخبراء
+        والمراكز العلمية المعنية بالصحة إلى المشاركة في الحوارات
+        العلمية، واقتراح الموضوعات البحثية، والتعاون في تحليل
+        السياسات، وتطوير الدراسات المشتركة.
+      </p>
+      <p>
+        ستُدرج معلومات الاتصال الرسمية وآلية إرسال مقترحات التعاون
+        في هذه الصفحة بعد تحديد وسيلة الاتصال الرسمية للمركز.
+      </p>
+    </div>
+  </section>
+
+  <div class="back">
+    <a class="button" href="ar.html">العودة إلى الصفحة الرئيسية لرايدا</a>
+  </div>
+</main>
+
+<footer>
+  <p>مركز رايدا الفكري الافتراضي الدولي | RAIDA Think Tank</p>
+  <p>المجموعة العلمية لنظام الصحة</p>
+  <p>تعرّف هذه الصفحة بمجال النشاط العلمي؛ وستُنشر معلومات المشروعات ووسائل الاتصال بعد التحقق منها واعتمادها.</p>
+</footer>
+
+</body>
+</html>
+```
