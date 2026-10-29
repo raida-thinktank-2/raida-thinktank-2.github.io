@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
@@ -16,7 +16,6 @@
     }
 
     * { box-sizing: border-box; }
-
     html { scroll-behavior: smooth; }
 
     body {
@@ -98,7 +97,6 @@
     }
 
     section { padding: 42px 8%; }
-
     section:nth-of-type(even) { background: var(--light); }
 
     h2 {
@@ -154,6 +152,14 @@
       text-decoration: none;
     }
 
+    .language-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin: 12px 0;
+    }
+
     @media (max-width: 600px) {
       header { padding: 16px 5%; }
 
@@ -163,13 +169,9 @@
       }
 
       .brand { font-size: 21px; }
-
       .brand-subtitle { font-size: 11px; }
-
       .hero { padding: 42px 6%; }
-
       section { padding: 32px 6%; }
-
       nav { gap: 10px; }
     }
   </style>
@@ -195,6 +197,7 @@
     <a href="#publications">انتشارات</a>
     <a href="#cooperation">همکاری علمی</a>
     <a href="health-spirituality-en.html">English</a>
+    <a href="health-spirituality-ar.html" lang="ar" dir="rtl">العربية</a>
   </nav>
 </header>
 
@@ -348,9 +351,22 @@
   <p>گروه علمی سلامت و معنویت</p>
   <p>اندیشکده مجازی بین‌المللی رایدا | RAIDA International Virtual Think Tank</p>
   <p>واسطه جهان در گفت‌وگو با کمک دانش در دسترس</p>
-  <p><a href="index.html">بازگشت به صفحه اصلی رایدا</a></p>
+
+  <div class="language-links">
+    <a href="health-spirituality.html">فارسی</a>
+    <a href="health-spirituality-en.html">English</a>
+    <a href="health-spirituality-ar.html" lang="ar" dir="rtl">العربية</a>
+  </div>
+
+  <p>
+    <a href="index.html">صفحه اصلی فارسی</a> |
+    <a href="en.html">English Home</a> |
+    <a href="ar.html" lang="ar" dir="rtl">الرئيسية العربية</a>
+  </p>
+
   <p>اطلاعات فعالیت‌ها پس از تأیید علمی منتشر می‌شود.</p>
 </footer>
 
 </body>
 </html>
+```
